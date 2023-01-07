@@ -1,0 +1,22 @@
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 1.25rem auto;
+}
+
+header {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+p img {
+    float: left;
+    margin: 10px;
+    border: 1px solid;
+}
