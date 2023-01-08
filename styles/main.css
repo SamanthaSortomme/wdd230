@@ -10,9 +10,30 @@ footer {
     margin: 1.25rem auto;
 }
 
-header {
+header,
+main,
+footer {
     text-align: center;
+    vertical-align: middle;
     padding: 1.5rem;
+}
+
+header,
+footer {
+    background-color: blue;
+    color: white;
+}
+
+.linklist {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    text-align: left;
 }
 
 p img {
