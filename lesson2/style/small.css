@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap');
+
+
+
+
+a {
+    color: #5f118f;
+    display: right;
+    justify-content: space-around;
+    background-color: black;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #5f118f;
+    color: rgb(202, 212, 209);
+}
+
+header {
+    background-color: #000000;
+
+
+}
+
+h1 {
+    color: #5f118f;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+
+}
+
+body {
+    background-color: #5f118f;
+    margin: 0;
+    padding: 0;
+}
+
+
+.grid-item h2 {
+    color: black;
+    font-size: 3em
+}
+
+p {
+    background-color: rgb(202, 212, 209);
+    font-size: .8em;
+    line-height: 1.5em;
+    padding: 35px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+
+
+.grid-item {
+    border-style: solid double solid double;
+    padding: 30px;
+
+}

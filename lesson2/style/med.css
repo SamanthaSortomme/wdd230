@@ -1,0 +1,18 @@
+@media only screen and (min-width: 32.5em) and (max-width: 60em) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-item:last-child {
+        grid-column: span 2;
+
+    }
+
+    .card-img {
+        display: stretch;
+        width: 100%;
+    }
+
+}

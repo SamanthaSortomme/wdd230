@@ -1,6 +1,7 @@
 body {
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.5;
+    font-family: 'Noto Sans', sans-ser
 }
 
 header,
@@ -15,13 +16,14 @@ main,
 footer {
     text-align: center;
     vertical-align: middle;
-    padding: 1.5rem;
+    padding: .8rem;
 }
 
 header,
 footer {
-    background-color: blue;
+    background-color: rgb(218, 129, 211);
     color: white;
+    font-family: 'Sevillana', cursive;
 }
 
 .linklist {
@@ -39,5 +41,5 @@ li {
 p img {
     float: left;
     margin: 10px;
-    border: 1px solid;
+    border: 1px transparent;
 }
