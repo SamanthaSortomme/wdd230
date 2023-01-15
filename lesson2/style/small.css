@@ -4,7 +4,7 @@
 
 
 a {
-    color: #5f118f;
+    color: #7c7c76;
     justify-content: space-around;
     background-color: black;
     font-size: 2em;
@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-    background-color: #5f118f;
+    background-color: #7c7c76;
     color: rgb(202, 212, 209);
 }
 
@@ -23,14 +23,14 @@ header {
 }
 
 h1 {
-    color: #5f118f;
+    color: #7c7c76;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
 
 }
 
 body {
-    background-color: #5f118f;
+    background-color: #7c7c76;
     margin: 0;
     padding: 0;
 }
