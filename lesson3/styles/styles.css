@@ -33,6 +33,24 @@ h1 {
     color: white;
 }
 
+.ateam {
+    grid-column: 2/4;
+
+    padding: 50px;
+    margin: 20px;
+    color: white;
+    font-size: 20x;
+    font-weight: 700px;
+    font-family: 'Lato', sans-serif;
+}
+
+.ateam:hover {
+
+    color: rgb(37, 191, 230);
+
+    box-sizing: border-box;
+}
+
 
 p1 {
     grid-column: 1 / 3;
