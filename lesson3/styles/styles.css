@@ -11,44 +11,76 @@ font-family: 'Poppins', sans-serif;
 
 */
 
-.grid {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
 }
 
 body {
     margin: 20px;
     padding: 4em;
-    font-size: 18px;
+    font-size: 28px;
     text-align: center;
     background-color: rgb(248, 111, 168);
     color: white;
     font-weight: 600
 }
 
-h1 {
-    grid-column: 1 / 5;
-    color: white;
+main {
+    padding: 3%;
 }
 
-.ateam {
-    grid-column: 2/4;
+.grid-item:nth-child(1) {
+    grid-column: span 4;
 
-    padding: 50px;
-    margin: 20px;
+}
+
+.grid-item:nth-child(2) {
+    grid-column: 1/2
+}
+
+.grid-item:last-child {
+    grid-column: 1/4
+}
+
+
+
+.index {
     color: white;
-    font-size: 20x;
-    font-weight: 700px;
+    font-size: 20px;
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    border: double;
+
+    padding: 4%;
 }
 
-.ateam:hover {
+.target {
+    color: white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    border: double;
+    padding: 4%;
 
+}
+
+.design {
+    color: white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    border: double;
+    padding: 4%;
+
+}
+
+nav a:hover {
+    background-color: white;
     color: rgb(37, 191, 230);
-
     box-sizing: border-box;
+
 }
 
 
@@ -58,29 +90,24 @@ p1 {
     margin: 20px;
     color: white;
     font-size: 20px;
-    font-weight: 700px;
+
     font-family: 'Lato', sans-serif;
 
 }
 
 .bteam {
-    grid-column: 3/5;
-    padding: 50px;
-    margin: 20px;
+
+    padding: 10px;
     color: white;
-    font-size: 2fr;
-    font-weight: 700px;
+    font-size: 22px;
+    font-weight: 700;
     font-family: 'Lato', sans-serif;
 }
 
+footer .social {
+    padding: 20px;
+}
 
-
-
-article {
-    grid-column: 2/4;
+footer a {
     color: white;
-    font-family: 'Merriweather', serif;
-    font-size: 25px;
-    list-style-position: inside;
-    text-align: left;
 }
