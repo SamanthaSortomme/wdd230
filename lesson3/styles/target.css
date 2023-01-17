@@ -13,9 +13,11 @@ font-family: 'Poppins', sans-serif;
 
 .grid {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 1.5em;
     grid-auto-rows: minmax(100px, auto);
+
 }
 
 body {
@@ -55,9 +57,6 @@ p2 {
     font-family: 'Lato', sans-serif;
 }
 
-
-
-
 article {
     grid-column: 2/4;
     color: rgb(248, 111, 168);
@@ -65,4 +64,5 @@ article {
     font-size: 25px;
     list-style-position: inside;
     text-align: left;
+    display: block;
 }
