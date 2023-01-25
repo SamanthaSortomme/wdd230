@@ -14,3 +14,12 @@ try {
 } catch (e) {
     console.log("Error with code or your browser does not support Locale");
 }
+// hamburger button========================
+
+function toggleMenu() {
+    document.getElementById('primaryNav').classList.toggle('open');
+    document.getElementById('hamburgerBtn').classList.toggle('open');;
+}
+
+const x = document.getElementById('hamburgerBtn')
+x.onclick = toggleMenu;

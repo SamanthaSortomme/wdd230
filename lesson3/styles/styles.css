@@ -88,6 +88,7 @@ nav a {
 nav {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 /*================================.H1-6 P ===============================*/

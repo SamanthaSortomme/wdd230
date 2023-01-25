@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Merriweather&family=Poppins&display=swap');
 
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 /*
 rgb(248, 111, 168) pink
 
@@ -22,13 +23,9 @@ html {
 }
 
 .banner {
-
-
-
-
-
+    display: grid;
+    top: 0;
     position: sticky;
-    z-index: 7;
     background: rgb(37, 191, 230);
 }
 
@@ -36,6 +33,18 @@ html {
     display: flex;
     margin: 0 auto;
     align-items: center;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    text-decoration: none;
 }
 
 header {
@@ -56,6 +65,11 @@ a {
     background-color: transparent red;
     text-decoration: none;
 }
+
+/* button============*/
+
+
+/*=====date==========*/
 
 .date {
     color: #0fd44a;
@@ -101,7 +115,6 @@ h1 {
     display: inline-block;
     overflow: hidden;
     height: 80%;
-    z-index: 5;
 
 
     font-size: 1em;
@@ -117,132 +130,7 @@ footer {
 }
 
 
-
-/*
-* {
-    margin: 0;
-    padding: 0;
-
-}
-
-.container {
+.location-container {
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../images/swirll.jpg);
-    box-sizing: border-box;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
-.navbar {
-    height: 12%;
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 50px;
-    cursor: pointer;
-}
-
-
-
-nav {
-    flex: 1;
-    text-align: right;
-    text-decoration: none;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-}
-
-.row {
-    display: flex;
-    height: 88%;
-    align-items: center;
-}
-
-.col {
-    flex-basis: 50%;
-}
-
-h1 {
-    font-size: 100px;
-    font-family: 'Lato', sans-serif;
-}
-
-p {
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    line-height: 15px;
-}
-
-button {
-    width: 180px;
-    color: red;
-    font-size: 12px;
-    padding: 12px 0;
-    background: green;
-    border: 0;
-    border-radius: 20px;
-    outline: none;
-    margin-top: 30px;
-}
-
-.card {
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 10px 15px;
-    background-image: url(../images/cupcake.png);
-    background-position: center;
-    background-size: cover;
-    transition: ease-in;
-}
-
-.card2 {
-    background-image: url(../images/candylandblu.jpg);
-}
-
-.card:hover {
-    transform: translate(-10px);
-}
-
-h2 {
-    color: blue;
-    text-shadow: 0 0 5px rgb(209, 12, 12);
-}
-
-.card p {
-    text-shadow: 0 0 5px red;
-    font-size: 12px;
-}
-
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
 }
