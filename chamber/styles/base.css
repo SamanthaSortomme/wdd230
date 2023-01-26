@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Merriweather&family=Poppins&display=swap');
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
 /*
 rgb(248, 111, 168) pink
 
@@ -53,13 +52,10 @@ header {
     grid-template-columns: 1fr;
     justify-content: space-evenly;
     margin: auto;
+    font-family: 'Merriweather', serif;
 }
 
-.menu-icon {
-    width: 30px;
-    cursor: pointer;
-    margin-left: 40px;
-}
+
 
 a {
     background-color: transparent red;
@@ -69,6 +65,8 @@ a {
 
 .logo {
     z-index: 1;
+    /* max-width: 100%;
+    max-height: auto; */
 }
 
 /* button============*/
@@ -85,16 +83,20 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to left, rgb(37, 191, 230), rgb(248, 77, 148));
+    background: linear-gradient(to left, rgb(248, 77, 148), rgb(37, 191, 230), rgb(248, 77, 148));
     color: #FFF;
     height: 100%;
-    padding: 1em;
 
 }
 
 .menu {
     display: flex;
     flex-direction: row;
+}
+
+.menu-icon {
+    width: 2em;
+    cursor: pointer;
 }
 
 .menu>li {
@@ -109,12 +111,7 @@ a {
 
 .menu-button-container {
     display: none;
-    height: 100%;
-
     cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #menu-toggle {
@@ -126,12 +123,13 @@ a {
 
 @media (max-width: 700px) {
     .menu-button-container {
-        display: flex;
+        display: inline-block;
+        align-self: flex-end;
     }
 
     .menu {
         position: absolute;
-        top: 0;
+        top: 10%;
         margin-top: 50px;
         left: 0;
         flex-direction: column;
@@ -176,10 +174,11 @@ a {
 .date {
     color: #0fd44a;
     text-align: center;
-    background-color: rgb(134, 22, 69);
-    padding-bottom: 10px;
-    font-size: 20px;
-    font-weight: 700;
+    display: none;
+    color: red;
+    font-size: 12px;
+
+
 }
 
 section {
