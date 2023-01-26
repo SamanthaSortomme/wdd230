@@ -58,7 +58,7 @@ header {
 
 
 a {
-    background-color: transparent red;
+    background-color: transparent;
     text-decoration: none;
 }
 
@@ -89,10 +89,7 @@ a {
 
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .menu-icon {
     width: 2em;
@@ -107,6 +104,11 @@ a {
 .menu>li:hover {
     opacity: 0.5;
     cursor: url(../images/cupcakesssss.png), auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
 }
 
 .menu-button-container {
@@ -211,8 +213,8 @@ h1 {
 }
 
 
-.spot1,
-.spot2 {
+.spot,
+.spot-extra {
     display: inline-block;
     overflow: hidden;
     height: 80%;
@@ -222,7 +224,7 @@ h1 {
 }
 
 footer {
-    background-color: rgb(37, 191, 230);
+    background-color: rgb(248, 77, 148);
     text-align: center;
     color: #e5e5e5;
     padding: 8px;
