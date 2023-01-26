@@ -34,26 +34,20 @@ html {
     align-items: center;
 }
 
-.navbar {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-nav {
-    flex: 1;
-    text-align: right;
-    text-decoration: none;
-}
 
 header {
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-evenly;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
     font-family: 'Merriweather', serif;
+    background: linear-gradient(to left, rgb(248, 77, 148), rgb(37, 191, 230), rgb(248, 77, 148));
+    color: #FFF;
+    height: 100%;
 }
+
+
 
 
 
@@ -76,17 +70,6 @@ a {
 
 * {
     box-sizing: border-box;
-}
-
-.top-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(to left, rgb(248, 77, 148), rgb(37, 191, 230), rgb(248, 77, 148));
-    color: #FFF;
-    height: 100%;
-
 }
 
 .menu {
@@ -212,6 +195,9 @@ h1 {
     display: block;
 }
 
+.spotlights {
+    box-shadow: 0 0 30px #d813c8
+}
 
 .spot,
 .spot-extra {
