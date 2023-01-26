@@ -4,15 +4,12 @@
         grid-template-columns: 1fr 2fr 1fr;
     }
 
-    .menu {
-        display: flex;
-        flex-direction: row;
-    }
 
-    .menu-button-container {
-        display: none;
-        cursor: pointer;
-    }
+    /* Do not want colors, just want to see when in large from medium  */
 
+    body {
+        color: chartreuse;
+        background-color: blue;
+    }
 
 }
