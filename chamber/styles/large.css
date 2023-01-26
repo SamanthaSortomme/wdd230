@@ -4,6 +4,15 @@
         grid-template-columns: 1fr 2fr 1fr;
     }
 
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-button-container {
+        display: none;
+        cursor: pointer;
+    }
 
 
 }

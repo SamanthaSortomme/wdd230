@@ -5,12 +5,16 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    /* Just trying to see a chang so I know it's working...I do not want these crazy colors*/
-
-    body {
-        background-color: blueviolet;
-        color: chartreuse;
+    .menu {
+        display: flex;
+        flex-direction: row;
     }
+
+    .menu-button-container {
+        display: none;
+        cursor: pointer;
+    }
+
 
     * {
 
