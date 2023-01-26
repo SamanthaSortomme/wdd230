@@ -66,17 +66,119 @@ a {
     text-decoration: none;
 }
 
+
+.logo {
+    z-index: 1;
+}
+
 /* button============*/
 
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left, rgb(37, 191, 230), rgb(248, 77, 148));
+    color: #FFF;
+    height: 100%;
+    padding: 1em;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.menu>li:hover {
+    opacity: 0.5;
+    cursor: url(../images/cupcakesssss.png), auto;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* background-image: url(../images/candylandblu.jpg); */
+
+
+@media (max-width: 700px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+        border: 1px solid rgb(37, 191, 230);
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: rgb(248, 77, 148);
+    }
+
+    .menu>li:hover {
+        opacity: 0.5;
+    }
+
+}
 
 /*=====date==========*/
 
 .date {
     color: #0fd44a;
     text-align: center;
-    background-color: rgb(248, 77, 148);
+    background-color: rgb(134, 22, 69);
     padding-bottom: 10px;
-    font-size: larger;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -93,7 +195,7 @@ main {
 
 main section,
 main section div {
-    background-color: #ca7e7e;
+    background-color: rgb(37, 191, 230);
     margin: 10px;
     text-align: center;
     border: 2px solid;
@@ -105,10 +207,10 @@ main section {
 }
 
 h1 {
-    color: rgb(248, 77, 148);
     text-align: center;
     display: block;
 }
+
 
 .spot1,
 .spot2 {
