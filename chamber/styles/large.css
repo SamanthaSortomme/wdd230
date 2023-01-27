@@ -2,14 +2,53 @@
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-    }
 
+    }
 
     /* Do not want colors, just want to see when in large from medium  */
 
     body {
-        color: chartreuse;
         background-color: blue;
     }
+
+    /* makes home-join go across not un and down */
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    .spot3 {
+        display: block;
+    }
+
+    .menu li {
+        background-color: transparent;
+    }
+
+    /* makes hamburger not show up */
+    .menu-button-container {
+        display: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .action {
+        grid-row: 1/3;
+        grid-column: 2/3;
+    }
+
+    .news {
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    .spotlights {
+        grid-column: 3/4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
 
 }

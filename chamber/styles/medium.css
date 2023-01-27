@@ -2,7 +2,7 @@
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     /* makes home-join go across not un and down */
@@ -20,6 +20,28 @@
         display: none;
         cursor: pointer;
         background-color: transparent;
+    }
+
+    .spot3 {
+        display: none;
+    }
+
+    .action,
+    .news,
+    .spotlights {
+        grid-column: span 3;
+    }
+
+    .news {
+        grid-row: 2;
+    }
+
+    .spotlights {
+        grid-row: 3;
+    }
+
+    .event {
+        grid-column: 1/3;
     }
 
     /* 

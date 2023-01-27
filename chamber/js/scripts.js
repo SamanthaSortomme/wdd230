@@ -11,8 +11,12 @@ function updateDate() {
     console.log(formatted_date);
 
     //Write to HTML element
-    document.querySelector('#banner').innerHTML = formatted_date;
-
+    document.querySelector('#date').innerHTML = formatted_date;
+    const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+        dateStyle: "full"
+    }).format(date);
+    let statement = ` Today is ${fulldateUK}`;
+    document.querySelector('#date').innerHTML = statement;
 }
 updateDate();
 
