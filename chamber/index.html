@@ -18,21 +18,27 @@ a simple logo that you have created for your chamber of commerce site or that yo
 </head>
 
 <body>
+
+
+
     <!-- <div class="banner">
-        <div class="banner-content">
-            <div class="banner-text">
-                <p>Come and eat your favorite sweets this Tuesday at Cupcake Commons, 3pm </p>
-            </div>
-            <button type="button" class="banner-button">
-                <img src="images/canex.jpg" alt="Close">
-            </button>
-        </div>
-    </div> -->
-    <nav>
-    </nav>
+          <div class="banner-content">
+              <div class="banner-text">
+                  <p>Come and eat your favorite sweets this Tuesday at Cupcake Commons, 3pm </p>
+              </div>
+              <button type="button" class="banner-button">
+                  <img src="images/canex.jpg" alt="Close">
+              </button>
+          </div>
+      </div> -->
+
+
     <header>
-        <input id="menu-toggle" type="checkbox">
-        <div class="menu-button-container" for="menu-toggle"> <img src="images/hamburger.png" alt="menu">
+        <nav>
+            <input id="menu-toggle" type="checkbox">
+            <label class="menu-button-container" for="menu-toggle"> <img src="images/hamburger.png" class="menu-icon"
+                    alt="logo">
+            </label>
             <ul class="menu">
                 <li>Home</li>
                 <li>Discover</li>
@@ -40,102 +46,99 @@ a simple logo that you have created for your chamber of commerce site or that yo
                 <li>Directory</li>
                 <li>Join</li>
             </ul>
-        </div>
-        <h1>Candy Land Chamber of Commerce Official Website</h1>
-        <img src="images/lollypop.jpg" class="logo" alt="logo">
-        <div id="datess" class="datess">
-            <p>Today's Date</p>
-        </div>
-
-
-        <!-- <script src="js/scripts.js"></script> -->
+            <h1>Candy Land Chamber of Commerce Official Website</h1>
+            <img src="images/lollypop.jpg" class="logo" alt="logo">
+        </nav>
 
     </header>
+    <div id="banner"> </div>
     <main class="home">
-        <section class="action">
-            <h2>Call to action here</h2>
-            <hr>
-
-        </section>
-
-        <section class="event">
-            <h2>Candy Land Events</h2>
-            <hr>
-            <p>January 4, 2023: Classes Begin</p>
-            <p>January 23, 2023: Chamber Meet and Greet</p>
-            <p>April 6, 2023: Chamber Board Celebrates Victory Over WDD230</p>
-        </section>
-        <section class="weather">
-            <h2>Weather</h2>
-            <hr>
-            <p> Cloudy With A Chance of Gum-Balls</p>
-        </section>
-        <section class="news">
-            <marquee class="marq" direction="left" loop="">
-                <h2>News With Mally Mallo</h2>
-            </marquee>
-            <hr>
-            <h3>Peppermint Forest under attack from invading gumdrops</h3>
-            <p>
-                The gumdrops are back, and this time the pesticide isn't killing them. Will our children even have a
-                forest left to play in?
-                <br>
-                <a href="back.html">Read More...</a>
-            </p>
-            <hr>
-            <h3>Race for mayor tightens as Lord Licorice gains favor of citizens
-            </h3>
-            <p>
-                The race everyone thought would be a landslide seems to be closer than anyone realized. Could our
-                Princess Frostine finally be dethroned? Early pull results are in and…
-                <br>
-                <a href="back.html">Read more...</a>
-            </p>
-            <hr>
-            <h3>Polio Eradicated!</h3>
-            <p>
-                Eleanor Abbott will survive to receive her reward from Gramma Nutt for being the oldest person to climb
-                Gumdrop Mountain. Hilary Koprowski successfully tested his own
-                vaccine and Salk quickly followed suit….
-                <br>
-                <a href="back.html">Read More...</a>
-            </p>
-        </section>
-        <section class="spotlights">
-            <div class="spot">
-                <a href="back.html">
-                    <h3>Sugar Rush <br>Race Track</h3>
-                </a>
-                <img src="images/race.jpg" alt="Race">
-            </div>
-            <div class="spot">
-                <a href="back.html">
-                    <h3> Old Dog New Twix.<br>Dog Training</h3>
-                </a>
-                <img src="images/paws.jpg" alt="Paws">
-            </div>
-            <div class="spot-extra">
-                <a href="back.html">
-                    <h3>Gingerbread Lodge <br>at Ice Cream Slopes</h3>
-                </a>
-                <img src="images/gingerbread.jpg" alt="lodge">
-            </div>
-        </section>
-        <button type="button">Join Now</button>
+        <div class="grid-container">
+            <!-- make more grid classes for evertrthing else -->
+            <section class="action gird-item">
+                <h2>Call to action here</h2>
+                <button type="button">Join Now</button>
+                <hr>
+            </section>
+            <section class="event">
+                <h2>Candy Land Events</h2>
+                <hr>
+                <p>January 4, 2023: Classes Begin</p>
+                <p>January 23, 2023: Chamber Meet and Greet</p>
+                <p>April 6, 2023: Chamber Board Celebrates Victory Over WDD230</p>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <hr>
+                <p> Cloudy With A Chance of Gum-Balls</p>
+            </section>
+            <section class="news">
+                <div class="scroll-left">
+                    <h2>News With Mally Mallo</h2>
+                </div>
+                <hr>
+                <h3>Peppermint Forest under attack from invading gumdrops</h3>
+                <p>
+                    The gumdrops are back, and this time the pesticide isn't killing them. Will our children even have a
+                    forest left to play in?
+                    <br>
+                    <a href="back.html">Read More...</a>
+                </p>
+                <hr>
+                <h3>Race for mayor tightens as Lord Licorice gains favor of citizens
+                </h3>
+                <p>
+                    The race everyone thought would be a landslide seems to be closer than anyone realized. Could our
+                    Princess Frostine finally be dethroned? Early pull results are in and…
+                    <br>
+                    <a href="back.html">Read more...</a>
+                </p>
+                <hr>
+                <h3>Polio Eradicated!</h3>
+                <p>
+                    Eleanor Abbott will survive to receive her reward from Gramma Nutt for being the oldest person to
+                    climb
+                    Gumdrop Mountain. Hilary Koprowski successfully tested his own
+                    vaccine and Salk quickly followed suit….
+                    <br>
+                    <a href="back.html">Read More...</a>
+                </p>
+            </section>
+            <section class="spotlights">
+                <div class="spot">
+                    <a href="back.html">
+                        <h3>Sugar Rush <br>Race Track</h3>
+                    </a>
+                    <img src="images/race.jpg" alt="Race">
+                </div>
+                <div class="spot">
+                    <a href="back.html">
+                        <h3> Old Dog New Twix.<br>Dog Training</h3>
+                    </a>
+                    <img src="images/paws.jpg" alt="Paws">
+                </div>
+                <div class="spot-extra">
+                    <a href="back.html">
+                        <h3>Gingerbread Lodge <br>at Ice Cream Slopes</h3>
+                    </a>
+                    <img src="images/gingerbread.jpg" alt="lodge">
+                </div>
+            </section>
+        </div>
     </main>
     <!--
-        <div class="col">
-            <div class="card card1">
-                <h2> XXXX</h2>
-                <p> text here if want</p>
-            </div>
-            <div class="col">
-                <div class="card card2">
-                    <h2> XXXX</h2>
-                </div>
-            </div>
-        </div>
--->
+          <div class="col">
+              <div class="card card1">
+                  <h2> XXXX</h2>
+                  <p> text here if want</p>
+              </div>
+              <div class="col">
+                  <div class="card card2">
+                      <h2> XXXX</h2>
+                  </div>
+              </div>
+          </div>
+  -->
 
     <footer>
         <section class="about">
@@ -154,13 +157,13 @@ a simple logo that you have created for your chamber of commerce site or that yo
         </section>
 
         <div class="social">
-            <a href="https://facebook.com" target="_blank">
+            <a href="back.html" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
             </a>
-            <a href="https://twitter.com" target="_blank">
+            <a href="back.html" target="_blank">
                 <img src="images/twitter.png" alt="twitter icon">
             </a>
-            <a href="https://instagram.com" target="_blank">
+            <a href="back.html" target="_blank">
                 <img src="images/instagram.png" alt="instagram icon">
             </a>
         </div>
@@ -174,7 +177,7 @@ a simple logo that you have created for your chamber of commerce site or that yo
         CandyLife&copy; 2023 - Samantha Sortomme
         <a class="contact" href="contact.html">&hearts;Contact Us&hearts;</a>
     </footer>
-    <script src="./js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

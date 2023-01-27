@@ -5,17 +5,24 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    /* makes home-join go across not un and down */
     .menu {
         display: flex;
         flex-direction: row;
     }
 
+    .menu li {
+        background-color: transparent;
+    }
+
+    /* makes hamburger not show up */
     .menu-button-container {
         display: none;
         cursor: pointer;
+        background-color: transparent;
     }
 
-
+    /* 
     * {
 
         grid-template-areas:
@@ -24,7 +31,7 @@
             "action events"
             "weather news"
             "footer footer"
-    }
+    } */
 
 
 

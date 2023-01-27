@@ -1,5 +1,7 @@
 function updateDate() {
     let date = new Date();
+    console.log(date.getDate());
+    // 01~26~2023;
     let dd = String(date.getDate()).padStart(2, '0');
     let mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
     let yyyy = date.getFullYear();
@@ -9,18 +11,23 @@ function updateDate() {
     console.log(formatted_date);
 
     //Write to HTML element
-    const x = document.querySelector('.datess').innerHTML;
-    console.log(x)
+    document.querySelector('#banner').innerHTML = formatted_date;
+
 }
+updateDate();
 
+// for dynamic year in footer
+// function year()
+// document.write(new Date().getFullYear())
 
+// for banner in week 5
 const banner = (day) => {
     const header = document.querySelector('header');
     const bannerH1 = document.createElement('h1');
     bannerH1.innerText = `🤝🏼 Come join us for the chamber meet and greet ${day} at 7: 00 p.m.`
     header.appendChild(bannerH1);
 }
-let dayName = newDate();
+let dayName = new Date();
 switch (dayName.getDay()) {
     case 0, 1, 2, 4, 5, 6, 7:
         banner('ice-cream')
