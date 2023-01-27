@@ -1,10 +1,17 @@
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
+function updateDate() {
+    let date = new Date();
+    let dd = String(date.getDate()).padStart(2, '0');
+    let mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = date.getFullYear();
 
-today = mm + '~' + dd + '~' + yyyy;
-document.write(today);
+    //formatted current date
+    const formatted_date = mm + '~' + dd + '~' + yyyy;
+    console.log(formatted_date);
+
+    //Write to HTML element
+    const x = document.querySelector('.datess').innerHTML;
+    console.log(x)
+}
 
 
 const banner = (day) => {
@@ -27,6 +34,35 @@ switch (dayName.getDay()) {
 
 
 
+
+
+
+
+
+
+// var today = new Date();
+// var dd = String(today.getDate()).padStart(2, '0');
+// var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+// var yyyy = today.getFullYear();
+
+// today = mm + '~' + dd + '~' + yyyy;
+// document.write(today);
+
+
+
+
+// function updateDate() {
+//     let today = new Date();
+//     let dd = String(today.getDate()).padStart(2, '0');
+//     let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+//     let yyyy = today.getFullYear();
+
+//     //formatted current date
+//     today = mm + '~' + dd + '~' + yyyy;
+//     console.log(today)
+// }
+
+// document.write(today);
 
 
  // Select the HTML element to manipulate
