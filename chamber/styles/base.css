@@ -16,6 +16,10 @@ font-family: 'Poppins', sans-serif;
 */
 
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -34,9 +38,7 @@ html {
     align-items: center;
 }
 
-
 header {
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,39 +49,23 @@ header {
     height: 100%;
 }
 
-
-
-
-
 a {
     background-color: transparent;
     text-decoration: none;
 }
 
-
+/* 
 .logo {
-    z-index: 1;
-    /* max-width: 100%;
-    max-height: auto; */
-}
+
+    max-width: 100%;
+    max-height: auto;
+} */
 
 /* button============*/
-
-
-
-
-* {
-    box-sizing: border-box;
-}
 
 .menu {
     display: flex;
     flex-direction: row;
-}
-
-.menu-icon {
-    width: 2em;
-    cursor: pointer;
 }
 
 .menu>li {
@@ -95,6 +81,11 @@ a {
 .menu-button-container {
     display: none;
     cursor: pointer;
+    width: 2em;
+}
+
+.menu-button-container img {
+    height: 3%;
 }
 
 #menu-toggle {
@@ -108,6 +99,8 @@ a {
     .menu-button-container {
         display: inline-block;
         align-self: flex-end;
+        /* width: 2em;
+        cursor: pointer; */
     }
 
     .menu {
@@ -204,8 +197,6 @@ h1 {
     display: inline-block;
     overflow: hidden;
     height: 80%;
-
-
     font-size: 1em;
 }
 
@@ -217,7 +208,6 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
 
 .location-container {
     height: 100%;
