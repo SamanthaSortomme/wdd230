@@ -15,23 +15,28 @@
     .menu {
         display: flex;
         flex-direction: row;
-    }
-
-
-
-    .spot3 {
-        display: block;
+        border: 1px solid rgb(37, 191, 230);
+        height: 2.5em;
+        border: none;
     }
 
     .menu li {
         background-color: transparent;
+        padding: .5em;
     }
 
     /* makes hamburger not show up */
     .menu-button-container {
+        background-color: transparent;
         display: none;
         cursor: pointer;
-        background-color: transparent;
+        justify-content: space-around;
+    }
+
+    .join {
+        grid-row: 3;
+
+        display: grid;
     }
 
     .action {
@@ -50,5 +55,8 @@
         grid-row-end: 3;
     }
 
+    .spot3 {
+        display: contents;
+    }
 
 }
