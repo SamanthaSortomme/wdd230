@@ -12,53 +12,12 @@ font-family: 'Poppins', sans-serif;
     font-family: 'Merriweather', serif;
 */
 
-* {
-    box-sizing: border-box;
+body {
+    position: relative;
 }
 
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
-
-.banner {
-    display: grid;
-    top: 0;
-    position: sticky;
-    background: rgb(248, 77, 148);
-    z-index: 11;
-}
-
-.banner-content {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-}
-
-.social img {
-    height: 1.1em;
-}
-
-.navbar {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-nav {
-    text-align: right;
-    text-decoration: none;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(to left, rgb(248, 77, 148), rgb(37, 191, 230), rgb(248, 77, 148));
-    color: #FFF;
-    height: 100%;
-}
-
-header {
+header,
+footer {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr;
@@ -72,247 +31,34 @@ a {
     text-decoration: none;
 }
 
-.logo {
-    margin-right: .1em;
-    margin-left: .1em;
-
-    /* z-index: 1;
-    max-width: 100%;
-    max-height: auto; */
-}
-
-/*==========================Main============*/
-
-.action {
-    background-image: url(../images/OhsoSweet!.png);
-    background-size: cover;
-    position: relative;
-}
-
-.button-small {
-    background-color: #d32189;
-    color: white;
-    padding: .5em .9em;
-    font-size: 2.5em;
-    cursor: pointer;
-    transform: scale(0.9);
-    box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.904);
-    border: none;
-    position: absolute;
-    bottom: 1em;
-    left: 0em;
-}
-
-.menu-icon {
-    width: 2em;
-    cursor: pointer;
-}
-
-.menu>li {
-    margin: 0 1rem;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    color: white;
-    background-color: rgb(248, 77, 148);
-
-}
-
-/*can not get this or one above to not cut off words
- menu ul {
-    margin: auto;
-} */
-
-.menu>li:hover {
-    opacity: 0.5;
-    cursor: url(../images/cupcakesssss.png), auto;
-
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.menu-button-container {
-    display: inline-block;
-    align-self: flex-end;
-    /* display: none;
-        cursor: pointer; */
-}
-
-@media (max-width: 32.5em) {
-    .menu {
-        position: absolute;
-        top: 10%;
-        margin-top: 8em;
-        right: 1.3em;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        z-index: 8;
-    }
-
-    #menu-toggle~.menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-}
-
-#menu-toggle:checked~.menu li {
-    border: 1px solid rgb(37, 191, 230);
-    height: 2.5em;
-    padding: .5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-/*=====date==========*/
-
-#date {
-    color: #8a1ca5;
-    text-align: center;
-    font-size: 3em;
-}
-
-section {
-    display: block;
-}
-
-main {
+.grid-container {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: white;
 }
 
-main section,
-main section div {
-    background-color: rgb(37, 191, 230);
-    margin: 10px;
-    text-align: center;
-    border: 2px solid;
+.action {
+    background-color: red;
 }
 
-main section {
-    height: 400px;
-    object-fit: cover;
+.event {
+    background-color: blue;
 }
 
-h1 {
-    text-align: center;
-    display: block;
+.weather {
+    background-color: green;
 }
 
 .news {
-
-    overflow: hidden;
+    background-color: purple;
 }
 
 .join {
-    display: none;
-}
-
-.button-large {
-    background-color: #d32189;
-    color: white;
-    padding: .5em .9em;
-    font-size: 2.5em;
-    cursor: url(../images/cupcakesssss.png), auto;
-    transform: scale(0.9);
-    border-radius: 3em;
+    background-color: pink;
 }
 
 .spotlights {
-    box-shadow: 0 0 30px #d813c8;
-    /* display: inline-block; */
-
-}
-
-.spot,
-.spot2,
-.spot3 {
-    display: inline-block;
-    overflow: hidden;
-    height: 80%;
-    font-size: 1em;
-    border: none;
-
-}
-
-.spot3 {
-    display: none;
-}
-
-footer {
-    background-color: rgb(248, 77, 148);
-    text-align: center;
-    color: #e5e5e5;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-}
-
-.location-container {
-    height: 100%;
-    width: 100%;
-}
-
-.contact-page {
-    background-color: #d32189;
-    color: #FFF;
-}
-
-/* 
-Coppied from CodePen Home CSS Scrolling Text Syed Murtaza 
-I wanted to use marquee in HTML but it is no longer supported and I didn't want to get docked points. This is pretty much a copy paste, I just took off a lot of the "fluff"*/
-.scroll-left {
-    height: 50px;
-    overflow: hidden;
-    position: relative;
-    border: none;
-}
-
-.scroll-left h2 {
-    margin: 0;
-    line-height: 50px;
-    animation: scroll-left 10s linear infinite;
-}
-
-/* Move it (define the animation) */
-@-moz-keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-    }
-
-    100% {
-        -moz-transform: translateX(-100%);
-    }
-}
-
-@-webkit-keyframes scroll-left {
-    0% {
-        -webkit-transform: translateX(100%);
-    }
-
-    100% {
-        -webkit-transform: translateX(-100%);
-    }
-}
-
-@keyframes scroll-left {
-    0% {
-        /* Browser bug fix */
-        transform: translateX(100%);
-    }
-
-    100% {
-        /* Browser bug fix */
-        -webkit-transform: translateX(-100%);
-        /* Browser bug fix */
-        transform: translateX(-100%);
-    }
+    background-color: orange;
 }

@@ -58,7 +58,7 @@ nav {
     height: 100%;
 }
 
-header {
+/* header {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr;
@@ -70,7 +70,7 @@ header {
 a {
     background-color: transparent red;
     text-decoration: none;
-}
+} */
 
 .logo {
     margin-right: .1em;
