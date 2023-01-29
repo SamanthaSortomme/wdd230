@@ -40,7 +40,9 @@ a {
 }
 
 .action {
-    background-color: red;
+    background-image: url(../images/OhsoSweet!.png);
+    background-size: cover;
+    position: relative;
 }
 
 .event {
@@ -57,8 +59,21 @@ a {
 
 .join {
     background-color: pink;
+    display: none;
 }
 
 .spotlights {
     background-color: orange;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 1em;
+}
+
+.spotlight img {
+    max-width: 80%;
+}
+
+.spot3 {
+    display: none;
 }
