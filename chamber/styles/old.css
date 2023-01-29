@@ -16,10 +16,10 @@ font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-html {
+/* html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-}
+} */
 
 .banner {
     display: grid;
@@ -35,17 +35,18 @@ html {
     align-items: center;
 }
 
+/* 
 .social img {
     height: 1.1em;
 }
-
+*/
 .navbar {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-nav {
+/* nav {
     text-align: right;
     text-decoration: none;
     flex: 1;
@@ -56,7 +57,7 @@ nav {
     background: linear-gradient(to left, rgb(248, 77, 148), rgb(37, 191, 230), rgb(248, 77, 148));
     color: #FFF;
     height: 100%;
-}
+}  */
 
 /* header {
     background-color: white;
@@ -66,13 +67,13 @@ nav {
     margin: auto;
     font-family: 'Merriweather', serif;
 }
-
+*/
 a {
     background-color: transparent red;
     text-decoration: none;
-} */
+}
 
-.logo {
+/* .logo {
     margin-right: .1em;
     margin-left: .1em;
 
@@ -81,6 +82,7 @@ a {
     max-height: auto; */
 }
 
+*/
 /*==========================Main============*/
 
 /* .action {
@@ -103,6 +105,7 @@ a {
     left: 0em;
 }
 
+
 .menu-icon {
     width: 2em;
     cursor: pointer;
@@ -124,11 +127,10 @@ a {
     margin: auto;
 } */
 
-.menu>li:hover {
+/* .menu>li:hover {
     opacity: 0.5;
     cursor: url(../images/cupcakesssss.png), auto;
-
-}
+} */
 
 #menu-toggle {
     display: none;

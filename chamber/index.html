@@ -10,7 +10,6 @@ a simple logo that you have created for your chamber of commerce site or that yo
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>CandyLand</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -30,15 +29,17 @@ a simple logo that you have created for your chamber of commerce site or that yo
     </div> -->
     <header>
         <nav>
-
-            <!-- <ul class="menu">
-                <li>Discover</li>
-                <li>Contact</li>
-                <li>Directory</li>
-                <li>Join</li>
+            <ul class="responsive menu">
+                <li><a href="#" onclick="toggleMenu()"><img src="images/hamburgerr.png" class="menu-icon"
+                            alt="&#9776;"></a></li>
+                <li><a href="#" class="active">Home </a></li> <!-- make active on all pages-->
+                <li><a href="#">Discover </a></li>
+                <li><a href="#">Contact </a></li>
+                <li><a href="#">Directory </a></li>
+                <li><a href="#">Join </a></li>
             </ul>
             <h1>Candy Land Chamber of Commerce Official Website</h1>
-            <img src="images/lollypop.jpg" class="logo" alt="logo">
+            <img src="images/lollypop.png" class="logo" alt="logo">
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook.png" alt="fb icon">
@@ -49,7 +50,7 @@ a simple logo that you have created for your chamber of commerce site or that yo
                 <a href="https://instagram.com" target="_blank">
                     <img src="images/instagram.png" alt="instagram icon">
                 </a>
-            </div> -->
+            </div>
         </nav>
 
     </header>
@@ -137,7 +138,7 @@ a simple logo that you have created for your chamber of commerce site or that yo
     </main>
 
     <footer>
-        <!-- <section class="about">
+        <section class="about">
             <div class="address">
                 <h3>Come Play With Us</h3>
                 <p> 123 ABC Street</p>
@@ -149,19 +150,23 @@ a simple logo that you have created for your chamber of commerce site or that yo
                 <h3>Shuffle The Cards</h3>
                 <p> CandyLand@Hasbro.com</p>
                 <p> 867-5309</p>
-            </div> 
+            </div>
         </section>
-
-
         <div class="location">
             <iframe class="location-container"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5946.476042688206!2d-71.42199920836244!3d41.82317252136758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e44512621633ef%3A0x3af1f465d39ce7ea!2sHasbro!5e0!3m2!1sen!2sus!4v1674532310731!5m2!1sen!2sus"
-                width="400" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                width="100" height="100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                 title="Map"></iframe>
-
         </div>
-        CandyLife&copy; 2023 - Samantha Sortomme
-        <a class="contact" href="contact.html">&hearts;Contact Us&hearts;</a> -->
+        <section class="end">
+            <span id="copyright">
+            </span>
+            CandyLife&copy; - Samantha Sortomme WDD 230 Project
+            <img src="images/lollypop.png" class="logo" alt="logo">
+            <a class="contact" href="contact.html">&hearts;Contact Us&hearts;</a>
+            Last Modified on <span id="lastModified">&nbsp;</span>
+
+        </section>
     </footer>
     <script src="js/scripts.js"></script>
 </body>

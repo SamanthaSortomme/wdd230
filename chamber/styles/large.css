@@ -36,15 +36,18 @@
         background-color: pink;
         grid-column: 1/2;
         grid-row: 3/4;
+        display: block;
     }
 
     .spotlights {
         background-color: orange;
         grid-column: 3/4;
         grid-row: 1/4;
+        /* 1/-1 */
+        flex-direction: column;
     }
 
     .spot3 {
-        display: none;
+        display: block;
     }
 }

@@ -19,6 +19,18 @@ function updateDate() {
     document.querySelector('#date').innerHTML = statement;
 }
 updateDate();
+// hamburger menu
+function toggleMenu() {
+    document.getElementsByClassName('menu')[0].classList.toggle('responsive')
+}
+
+
+document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+
+if (document.lastModified) {
+    document.getElementById('lastModified').innerHTML =
+        new Date(document.lastModified).toLocaleString();
+}
 
 // for dynamic year in footer
 // function year()
