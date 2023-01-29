@@ -137,7 +137,8 @@ nav a:hover {
 .action {
     background-image: url(../images/OhsoSweet!.png);
     background-size: cover;
-    position: relative;
+    width: cover;
+    height: 20em
 }
 
 .button-small {
@@ -148,10 +149,10 @@ nav a:hover {
     cursor: pointer;
     transform: scale(0.9);
     box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.904);
-    border: none;
+    /* border: none;
     position: absolute;
     bottom: 1em;
-    left: 0em;
+    left: 0em; */
 }
 
 .event {
@@ -208,6 +209,7 @@ nav a:hover {
 footer {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1.5fr;
+
 
 }
 

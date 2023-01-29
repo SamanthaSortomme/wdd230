@@ -37,6 +37,11 @@
         grid-row: 1/2;
     }
 
+    .button-small {
+        position: static;
+
+    }
+
     .event {
         grid-column: 1/2;
         grid-row: 5/6;
