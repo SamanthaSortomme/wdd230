@@ -36,27 +36,6 @@ if (document.lastModified) {
 // function year()
 // document.write(new Date().getFullYear())
 
-// for banner in week 5
-const banner = (day) => {
-    const header = document.querySelector('header');
-    const bannerH1 = document.createElement('h1');
-    bannerH1.innerText = `🤝🏼 Come join us for the chamber meet and greet ${day} at 7: 00 p.m.`
-    header.appendChild(bannerH1);
-}
-let dayName = new Date();
-switch (dayName.getDay()) {
-    case 0, 1, 2, 4, 5, 6, 7:
-        banner('ice-cream')
-        break;
-    case 3:
-        banner('Wednesday')
-        break;
-    default:
-        console.log('wow, it is a crazy day...or is it?');
-}
-
-
-
 
 
 

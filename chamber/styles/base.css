@@ -12,6 +12,10 @@ font-family: 'Poppins', sans-serif;
     font-family: 'Merriweather', serif;
 */
 
+* {
+    box-sizing: border-box;
+    /*  padding and border are included in the width and height: */
+}
 
 html {
     line-height: 1.15;
@@ -50,6 +54,36 @@ main section div {
 
 h3 {
     color: black;
+}
+
+.banner {
+    display: grid;
+    top: 0;
+    position: sticky;
+    background: rgb(248, 77, 148);
+    z-index: 11;
+}
+
+.banner-content {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#closeBanner {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    border-radius: 50%;
+}
+
+#closeBanner img {
+    height: 1.3em;
+}
+
+#closeBanner:hover {
+    background-color: rgb(37, 191, 230);
 }
 
 /* ===========   nav   =============== */
@@ -119,10 +153,14 @@ nav a:hover {
 .logo {
     margin-right: .1em;
     margin-left: .1em;
-
+    text-align: left;
     /* z-index: 1;
     max-width: 100%;
     max-height: auto; */
+}
+
+.logo img {
+    text-align: left;
 }
 
 .social {
@@ -209,7 +247,7 @@ nav a:hover {
 footer {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1.5fr;
-
+    /* height: 200px; */
 
 }
 

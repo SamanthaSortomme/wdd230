@@ -12,16 +12,16 @@ font-family: 'Poppins', sans-serif;
     font-family: 'Merriweather', serif;
 */
 
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 /* html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
 } */
 
-.banner {
+/* .banner {
     display: grid;
     top: 0;
     position: sticky;
@@ -33,7 +33,7 @@ font-family: 'Poppins', sans-serif;
     display: flex;
     margin: 0 auto;
     align-items: center;
-}
+} */
 
 /* 
 .social img {
