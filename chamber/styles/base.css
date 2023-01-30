@@ -60,7 +60,9 @@ h3 {
     display: grid;
     top: 0;
     position: sticky;
-    background: rgb(248, 77, 148);
+    background: white;
+    color: rgb(37, 191, 230);
+    border: double;
     z-index: 11;
 }
 

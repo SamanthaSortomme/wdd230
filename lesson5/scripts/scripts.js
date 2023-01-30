@@ -6,10 +6,24 @@ const button = document.getElementById('push')
 const list = document.getElementById('list')
 
 button.addEventListener('click', function () {
-    // alert(input.value)
-    //make sute input isn't blank
-    const different = document.createElement('li')
-    different.appendChild(document.createTextNode(input.value))
-    list.appendChild(different)
+    const myItem = input.value;
+    input.value = '';
+
+    const different = document.createElement('li');
+    const listText = document.createElement('span');
+    const listBtn = document.createElement('button');
+
+    different.appendChild(listText);
+    listText.textContent = myItem;
+    different.appendChild(listBtn);
+    listBtn.textContent = "\u274C";
+    list.appendChild(different);
+
+    listBtn.addEventListener('click', () => {
+        list.removeChild(different);
+    });
+
+    input.focus();
+
 })
 
