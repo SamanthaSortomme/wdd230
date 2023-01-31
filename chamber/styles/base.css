@@ -41,6 +41,12 @@ footer {
     color: white;
 }
 
+.headAlign {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 /* section {
     display: block;
 } */
@@ -170,6 +176,12 @@ nav a:hover {
 
 .social {
     text-align: right;
+    align-self: end;
+    justify-self: end;
+}
+
+header nav .social {
+    text-align: right;
 }
 
 .social img {
@@ -261,7 +273,7 @@ footer a {
 }
 
 .about {
-    padding: 2em;
+    padding: 1em;
 }
 
 .location-container {
@@ -269,8 +281,26 @@ footer a {
     width: 100%;
 }
 
+.about,
+.address,
+h4,
+p {
+    text-align: center;
+    margin: 1px;
+}
+
 .end {
     padding: 2em;
+
+}
+
+.end,
+#copyright,
+.contact,
+.update {
+    text-align: center;
+    margin: 1px;
+    font-size: 10px;
 }
 
 .contact-page {
