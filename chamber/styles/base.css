@@ -60,11 +60,14 @@ h3 {
     display: grid;
     top: 0;
     position: sticky;
-    background: white;
-    color: rgb(37, 191, 230);
+    background-image: linear-gradient(rgb(37, 191, 230), rgb(248, 77, 148), rgb(37, 191, 230));
+    /* background-color: linear-gradient(to left, (37, 191, 230), rgb(37, 191, 230)); */
+    color: black;
     border: double;
     z-index: 11;
 }
+
+
 
 .banner-content {
     display: flex;
@@ -178,7 +181,7 @@ nav a:hover {
     background-image: url(../images/OhsoSweet!.png);
     background-size: cover;
     width: cover;
-    height: 20em
+    /* height: 100%; */
 }
 
 .button-small {

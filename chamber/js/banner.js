@@ -1,7 +1,7 @@
 // for banner in week 5
 const bannerMessage = (day) => {
     const bannerH1 = document.querySelector('.bannerH1');
-    const message = document.createElement('h4');
+    const message = document.createElement('h2');
     message.innerText = `🤝🏼 Come join us for the chamber meet and greet ${day} at 7: 00 p.m.`
     console.log(message)
     console.log(bannerH1)
