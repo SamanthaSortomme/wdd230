@@ -14,9 +14,11 @@ let dayName = new Date();
 switch (dayName.getDay()) {
     case 1:
         bannerMessage('Wednesday')
+        document.querySelector(".banner").style.display = "grid";
         break;
     case 2:
         bannerMessage('Wednesday')
+        document.querySelector(".banner").style.display = "grid";
         break;
         c
     default:

@@ -37,10 +37,13 @@
         grid-row: 1/2;
     }
 
-    .button-small {
-        position: static;
+    /* .button-small {
+        width: 4em;
+        height: 3em;
+        font-size: 2em;
+        text-align: center;
 
-    }
+    } */
 
     .event {
         grid-column: 1/2;

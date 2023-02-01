@@ -6,6 +6,7 @@ const button = document.getElementById('push')
 const list = document.getElementById('list')
 
 button.addEventListener('click', function () {
+    // if (input.value !=='')
     const myItem = input.value;
     input.value = '';
 
