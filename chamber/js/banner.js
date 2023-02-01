@@ -16,7 +16,7 @@ switch (dayName.getDay()) {
         bannerMessage('Wednesday')
         document.querySelector(".banner").style.display = "grid";
         break;
-    case 2:
+    case 3:
         bannerMessage('Wednesday')
         document.querySelector(".banner").style.display = "grid";
         break;
