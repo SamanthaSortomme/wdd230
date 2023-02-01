@@ -190,11 +190,15 @@ header nav .social {
 
 /* ==============boxes ======================*/
 .action {
-    background-image: url(../images/OhsoSweet!.png);
+    /* background-image: url(../images/OhsoSweet!.png); */
     background-size: cover;
     width: cover;
     /* height: 100%; */
 }
+
+/* .sweet img {
+    width: 80%;
+} */
 
 .button-small {
     background-color: #d32189;
