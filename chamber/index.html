@@ -39,7 +39,7 @@ a simple logo that you have created for your chamber of commerce site or that yo
                 <li><a href="#">Join </a></li>
             </ul>
             <div class="headAlign">
-                <img src="images/lollypop.png" class="logo" alt="logo">
+                <img src="images/lollypop.webp" class="logo" alt="logo">
                 <h1>Candy Land Chamber of Commerce Official Website</h1>
                 <div class="social">
                     <a href="https://facebook.com" target="_blank">
@@ -57,10 +57,15 @@ a simple logo that you have created for your chamber of commerce site or that yo
         <div class="grid-container">
             <section class="action">
                 <picture class="sweet">
+                    <source srcset="images/medium.jpg" media="(min-width: 32.5em) and (max-width: 64em)">
+                    <source srcset="images/large.jpg" media="(min-width: 64em)">
+                    <img src="images/small.jpg" alt="wdd230picture">
+                </picture>
+                <!-- <picture class="sweet">
                     <source srcset="images/OhsoSweet!500.png" media="(min-width: 32.5em) and (max-width: 64em)">
                     <source srcset="images/OhsoSweet!.png" media="(min-width: 64em)">
                     <img src="images/OhsoSweet!200.png" alt="wdd230picture">
-                </picture>
+                </picture> -->
                 <button type="button" class="button-small">Join Today!</button>
             </section>
             <section class="event">
@@ -79,6 +84,7 @@ a simple logo that you have created for your chamber of commerce site or that yo
                     <img src=" " alt="Weather" id="weathericon">
                     <figcaption></figcaption>
                 </figure>
+                <p>Windchill is: <span id="windchill"></span></p>
                 <!-- <p> Cloudy With A Chance of Gum-Balls</p> -->
             </section>
             <section class="news">
@@ -169,7 +175,7 @@ a simple logo that you have created for your chamber of commerce site or that yo
             CandyLife&copy; <br>
             <p>Samantha Sortomme WDD 230 Project</p>
 
-            <img src="images/lollypop.png" class="logo" alt="logo"> <br>
+            <img src="images/lollypop.webp" class="logo" alt="logo"> <br>
             <a class="contact" href="contact.html">&hearts;Contact Us&hearts;</a>
             <br>
             Last Modified on <span id="lastModified">&nbsp;</span>
