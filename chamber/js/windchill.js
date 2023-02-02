@@ -1,8 +1,8 @@
-// const temperature = 40;
-// const speed = 5;
-const temperature = document.querySelector('#temperature');
+const temperature = 40;
 const speed = 5;
-const windchill = document.querySelector('#windchill');
+// const temperature = document.querySelector('#temperature');
+// const speed = 5;
+// const windchill = document.querySelector('#windchill');
 
 function getWindchill(temperature, speed) {
     console.log("in the windchill function")
