@@ -4,7 +4,11 @@
 }
 
 h1 {
-    color: rgb(16, 168, 168);
+    color: rgb(88, 153, 153);
+}
+
+body {
+    background-color: aquamarine;
 }
 
 /* article img[data-src] {

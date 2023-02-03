@@ -12,6 +12,12 @@ font-family: 'Poppins', sans-serif;
     font-family: 'Merriweather', serif;
 */
 
+
+
+/* 
+.active {
+    don't forget about active page
+} */
 * {
     box-sizing: border-box;
     /*  padding and border are included in the width and height: */
@@ -312,7 +318,11 @@ p {
     color: #FFF;
 }
 
-
+/* =====================discovery================ */
+.discovery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 
 
