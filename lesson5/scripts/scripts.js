@@ -6,6 +6,9 @@ const button = document.getElementById('push')
 const list = document.getElementById('list')
 
 button.addEventListener('click', function () {
+    if (input.value.trim() === "") {
+        return;
+    }
     // if (input.value !=='')
     const myItem = input.value;
     input.value = '';
@@ -27,4 +30,5 @@ button.addEventListener('click', function () {
     input.focus();
 
 })
+
 
