@@ -48,9 +48,106 @@
     </header>
     <div id="date"></div>
     <main>
+        <div class="joingrid">
+            <!-- <h1>Chamber Application</h1> -->
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="1112221234" required></label>
+                    <label class="top"> Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                            required></label>
+                    <label class="top">Business Name/Title* <input type="text" name="lname" required></label>
+                    <label class="top"> Business Position Title <input type="text" name="title" minlength="7"
+                            pattern="^[A-Za-z -]+$"></label>
+                    <label class="top">Why Do You Want To Join <input type="text" name="why"></label>
+                    <label class="top">How Did You Hear About Us? <input type="text" name="hear"></label>
 
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Levels</legend>
+
+                    <label class="sbs"><input type="radio" name="Membership" value="Gold"> Gold Membership</label>
+                    <label class="sbs"><input type="radio" name="Membership" value="Silver"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="Membership" value="Bronze"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="Membership" value="NP"> NP Membership</label>
+                    <div>Business Description</div>
+                    <textarea class="top" type="text"></textarea>
+
+                    <input id="hiddentime" type="hidden" name="time" value="CurrentDate">
+                </fieldset>
+                <button type="submit" class="submitBtn">Choose My Level </button>
+            </form>
+            <div class="levels">
+                <div class="non">
+                    <h1> Benefits of Nonprofit Membership</h1>
+                    <p>As free as the swirls that naturally come from our ice cream
+                    </p>
+                    <ul>
+                        <li>Access to one Board of Directors meeting</li>
+                        <li>Opportunity to read our amazing weekly newsletter </li>
+                        <li>Semi-annual advertisement advice from Princess Lolly
+                        </li>
+                        <li> Personal invitations to events hosted by the Chamber Team
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="bronze ">
+                    <h1> Benefits of Bronze Membership</h1>
+                    <p>For Only 20 Sprinkles/Year </p>
+                    <ul>
+                        <li>15% discount on advertising
+                        </li>
+                        <li> Guest invitation to one Executive Committee meeting
+                        </li>
+                        <li>10 Sprinkles off on all events sponsored by Candy Land City
+                        </li>
+                        <li>Customized investment package personally created by Jolly himself.
+
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="silver ">
+                    <h1> Benefits of Silver Membership</h1>
+                    <p> Just 25 Sprinkles/Year
+                    </p>
+                    <ul>
+                        <li>2 Spotlight ads per year
+                        </li>
+                        <li> Waived membership processing fee (50 Sprinkle value)
+                        </li>
+                        <li> Friends and family discount for Gummy Pass and Ice Cream Slopes
+                        </li>
+                        <li>Chance to appear in the morning show Cloudy with a Chance of Gumballs with Mr. Mint!
+
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="gold">
+                    <h1> Benefits of Gold Membership</h1>
+                    <p>50 Sprinkles/Year
+                        Gold membership is for businesses that want to win!
+                    </p>
+                    <ul>
+                        <li>Free ice cream for your team every first Saturday of the month
+                        </li>
+                        <li>Retreat for your employee of the month(+1) at Lollypop Woods
+                        </li>
+                        <li> Opportunity to attend a VIP meet-and-greet at Cupcake Commons
+                        </li>
+                        <li> Chamber representation at legislative hearings by our very own Fluffypuffer
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+
+        </div>
     </main>
-
     <footer>
         <section class="about">
             <div class="address">
@@ -85,28 +182,11 @@
 
         </section>
     </footer>
-    <script src="js/scripts.js"></script>
-    <script src="js/banner.js"></script>
+    <!-- <script src="js/scripts.js"></script>
+    <script src="js/banner.js"></script>-->
     <script src="js/weather.js"></script>
     <script src="js/windchill.js"></script>
     <script src="js/lazy.js"></script>
 </body>
 
 </html>
-
-
-<!-- <source media="(min-width:25em)" srcset="images/OhsoSweet!200.png">
-                      <source media="(min-width:32.5em)" srcset="images/OhsoSweet!500.png">
-                      <source media="(min-width:64rem)" srcset="images/OhsoSweet!.png">
-                      <img src="images/OhsoSweet!.png" alt="sweets"> -->
-
-<!-- <source media="(max-width:200px)" srcset="images/OhsoSweet!200.png">
-                      <source media="(max-width:500px)" srcset="images/OhsoSweet!500.png">
-                      <source media="(max-width:800px)" srcset="images/OhsoSweet!.png">
-                      <img src="images/OhsoSweet!50.png" alt="sweets"> -->
-
-<!-- <figure class="sweet">
-                      <img src="images/OhsoSweet!50.png" sizes="50vw" alt="sweet" srcset="images/OhsoSweet!200.png 200w
-                      images/OhsoSweet!500.png 500x
-                      images/OhsoSweet!.png 800w>">
-                  </figure> -->

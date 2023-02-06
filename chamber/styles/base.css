@@ -28,6 +28,17 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+/* 
+.username,
+.cname,
+.cSplit,
+.c {
+    font-size: 50px;
+    color: #d32189;
+    background-color: aqua;
+} */
+
+
 a {
     background-color: transparent red;
     text-decoration: none;
@@ -323,6 +334,119 @@ p {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+
+/* ===============JOIN PAGE===================== */
+
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid rgb(37, 191, 230);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: rgb(37, 191, 230);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+
+    display: block;
+    padding-top: 1rem;
+    color: #d32189;
+    font-size: 1rem;
+}
+
+form label.top input,
+form label.top select {
+
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #8a1ca5;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgb(164, 222, 236);
+}
+
+form label.sbs {
+
+    display: block;
+    padding: .75rem 0;
+    color: #8a1ca5;
+}
+
+form button {
+    border: none;
+    background-color: #d32189;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 2rem 2%;
+    width: 90%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: #d32189 solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: rgb(37, 191, 230) solid 6px;
+}
+
+textarea {
+    height: 200px;
+    background-color: rgb(164, 222, 236);
+    border-radius: 9px;
+    padding: .75rem;
+
+}
+
+/* ==============below form============== */
+
+.levels {
+    background-color: rgb(37, 191, 230);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
