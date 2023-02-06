@@ -62,6 +62,11 @@
 
     }
 
+    .levels {
+        background-color: rgb(37, 191, 230);
+        margin: 2.5em 0 9em 0;
+        border: 20px solid #d32189;
+    }
 
 
 

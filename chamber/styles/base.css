@@ -324,10 +324,7 @@ p {
     font-size: 10px;
 }
 
-.contact-page {
-    background-color: #d32189;
-    color: #FFF;
-}
+
 
 /* =====================discovery================ */
 .discovery {
@@ -335,6 +332,16 @@ p {
     grid-template-columns: 1fr;
 }
 
+/* =============contact page====================== */
+
+.contactp {
+    background-color: white;
+    color: #d32189;
+}
+
+.contactp a {
+    color: rgb(37, 191, 230);
+}
 
 /* ===============JOIN PAGE===================== */
 
@@ -405,7 +412,7 @@ textarea {
     height: 200px;
     background-color: rgb(164, 222, 236);
     border-radius: 9px;
-    padding: .75rem;
+
 
 }
 
@@ -413,6 +420,8 @@ textarea {
 
 .levels {
     background-color: rgb(37, 191, 230);
+    margin: 0 0 1em 0;
+    border: 20px solid #d32189;
 }
 
 
