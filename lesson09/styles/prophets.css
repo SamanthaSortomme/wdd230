@@ -1,3 +1,42 @@
 body {
-    background-color: rgb(165, 238, 238);
+    background-color: #93f353;
+    display: grid;
+    justify-items: center;
 }
+
+.cards {
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    text-align: center;
+    gap: 1.5em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    background-color: #239ac2;
+    color: #66e710;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+p {
+    font-size: 20px;
+}
+
+/* @media only screen and (min-width: 32.5em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} */
