@@ -425,11 +425,18 @@ textarea {
 }
 
 
+/* =============================DIRECTORY=================== */
 
+.cards section {
+    border: solid 10px rgb(21, 255, 0);
+    margin: 0;
+    width: 70%;
+}
 
+.cards {
+    border: solid 10px red;
 
-
-
+}
 
 
 

@@ -1,92 +1,94 @@
-[
-    {
-        "name": "Swedish Fishing co.",
-        "address": "111 Pond Brk, CandyLand, NA 99501",
-        "phone": "(888) 787-1212",
-        "url": "https://www.churchofjesuschrist.org/?lang=eng",
-        "image": "images/dpond.jpg",
-        "label": "Fishing",
-        "nice": "true",
-        "membership": "Nonprofit"
-    },
-    {
-        "name": "Menz Fashion",
-        "address": "4949 Answer st.CandyLand, NA 99501",
-        "phone": "(888) 787-1212",
-        "url": "https://www.churchofjesuschrist.org/study/scriptures?lang=eng&platform=web",
-        "image": "images/dmenfashon.jpg",
-        "label": "Fashion",
-        "nice": "true",
-        "membership": "Gold"
-    },
-    {
-        "name": "You Scream",
-        "address": "3215 Schwans cir. CandyLand, NA 99501",
-        "phone": "(888) 787-0516",
-        "url": "https://www.churchofjesuschrist.org/study/general-conference?lang=eng",
-        "image": "images/dicec.jpg",
-        "label": "Ice-Cream",
-        "nice": "true",
-        "membership": "Bronze"
-    },
-    {
-        "name": "Hot Hot Hot",
-        "address": "005 Pole ln, CandyLand, NA 99501",
-        "phone": "(888) 787-4236",
-        "url": "https://www.churchofjesuschrist.org/study/come-follow-me?lang=eng",
-        "image": "images/dhot.jpg",
-        "label": "Hot-Cocoa",
-        "nice": "true",
-        "membership": "Gold"
-    },
-    {
-        "name": "Yokes Eggs",
-        "address": "777 Risen X-ing CandyLand, NA 99501",
-        "phone": "(888) 787-2602 ",
-        "url": "https://www.churchofjesuschrist.org/study/lib?lang=eng&platform=web",
-        "image": "images/eastee.jpg",
-        "label": "Farm",
-        "nice": "true",
-        "membership": "Bronze"
-    },
-    {
-        "name": "BubbleGym",
-        "address": "60 E 49th Ave, CandyLand, NA 99501",
-        "phone": "(888) 787-2963",
-        "url": "https://www.churchofjesuschrist.org/media?lang=eng",
-        "image": "images/dgym.jpg",
-        "label": "Gym",
-        "nice": "true",
-        "membership": "Silver "
-    },
-    {
-        "name": "FillerUp Grocery",
-        "address": "999 Walmart Dr. CandyLand, NA 99501",
-        "phone": "(888) 787-8076 ",
-        "url": "https://www.churchofjesuschrist.org/music/library?lang=eng",
-        "image": "images/dgrocery.jpg",
-        "label": "Grocery",
-        "nice": "null",
-        "membership": "Silver "
-    },
-    {
-        "name": "Cake~N~Bake",
-        "address": "350 Ovens Flt CandyLand, NA 99501",
-        "phone": "(888) 787-9474 ",
-        "url": "https://www.churchofjesuschrist.org/topics/families-and-individuals/lifes-challenges/hope-and-help?lang=eng",
-        "image": "images/dcupcake.jpg",
-        "label": "Bakery",
-        "nice": "true",
-        "membership": "Gold"
-    },
-    {
-        "name": "AnimalLookies",
-        "address": "123 zoo Cyn CandyLand, NA 99501",
-        "phone": "(888) 787-7153",
-        "url": "https://www.churchofjesuschrist.org/inspiration?lang=eng",
-        "image": "images/dzoo.jpg",
-        "label": "Zoo",
-        "nice": "false",
-        "membership": "Silver "
-    }
-]
+{
+    "info": [
+        {
+            "name": "Swedish Fishing co.",
+            "address": "111 Pond Brk, CandyLand, NA 99501",
+            "phone": "(888) 787-1212",
+            "web": "https://www.churchofjesuschrist.org/?lang=eng",
+            "portrait": "images/dpond.jpg",
+            "label": "Fishing",
+            "nice": true,
+            "membership": "Nonprofit"
+        },
+        {
+            "name": "Menz Fashion",
+            "address": "4949 Answer st.CandyLand, NA 99501",
+            "phone": "(888) 787-1212",
+            "web": "https://www.churchofjesuschrist.org/study/scriptures?lang=eng&platform=web",
+            "portrait": "images/dmenfashon.jpg",
+            "label": "Fashion",
+            "nice": true,
+            "membership": "Gold"
+        },
+        {
+            "name": "You Scream",
+            "address": "3215 Schwans cir. CandyLand, NA 99501",
+            "phone": "(888) 787-0516",
+            "web": "https://www.churchofjesuschrist.org/study/general-conference?lang=eng",
+            "portrait": "images/dicec.jpg",
+            "label": "Ice-Cream",
+            "nice": true,
+            "membership": "Bronze"
+        },
+        {
+            "name": "Hot Hot Hot",
+            "address": "005 Pole ln, CandyLand, NA 99501",
+            "phone": "(888) 787-4236",
+            "web": "https://www.churchofjesuschrist.org/study/come-follow-me?lang=eng",
+            "portrait": "images/dhot.png",
+            "label": "Hot-Cocoa",
+            "nice": true,
+            "membership": "Gold"
+        },
+        {
+            "name": "Yokes Eggs",
+            "address": "777 Risen X-ing CandyLand, NA 99501",
+            "phone": "(888) 787-2602 ",
+            "web": "https://www.churchofjesuschrist.org/study/lib?lang=eng&platform=web",
+            "portrait": "images/eastee.jpg",
+            "label": "Farm",
+            "nice": true,
+            "membership": "Bronze"
+        },
+        {
+            "name": "BubbleGym",
+            "address": "60 E 49th Ave, CandyLand, NA 99501",
+            "phone": "(888) 787-2963",
+            "web": "https://www.churchofjesuschrist.org/media?lang=eng",
+            "portrait": "images/dgym.jpg",
+            "label": "Gym",
+            "nice": true,
+            "membership": "Silver "
+        },
+        {
+            "name": "FillerUp Grocery",
+            "address": "999 Walmart Dr. CandyLand, NA 99501",
+            "phone": "(888) 787-8076 ",
+            "web": "https://www.churchofjesuschrist.org/music/library?lang=eng",
+            "portrait": "images/dgrocery.jpg",
+            "label": "Grocery",
+            "nice": null,
+            "membership": "Silver "
+        },
+        {
+            "name": "Cake~N~Bake",
+            "address": "350 Ovens Flt CandyLand, NA 99501",
+            "phone": "(888) 787-9474 ",
+            "web": "https://www.churchofjesuschrist.org/topics/families-and-individuals/lifes-challenges/hope-and-help?lang=eng",
+            "portrait": "images/dcupcake.jpg",
+            "label": "Bakery",
+            "nice": true,
+            "membership": "Gold"
+        },
+        {
+            "name": "AnimalLookies",
+            "address": "123 zoo Cyn CandyLand, NA 99501",
+            "phone": "(888) 787-7153",
+            "web": "https://www.churchofjesuschrist.org/inspiration?lang=eng",
+            "portrait": "images/dzoo.jpg",
+            "label": "Zoo",
+            "nice": false,
+            "membership": "Silver "
+        }
+    ]
+}
