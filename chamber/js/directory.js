@@ -1,5 +1,6 @@
 const x = 'js/data.json'
-
+const list = document.querySelector('.list');
+const grid = document.querySelector('.grid');
 
 async function getmembershipData() {
     const response = await fetch(x);
@@ -11,12 +12,19 @@ async function getmembershipData() {
 
 getmembershipData();
 
+
+
+
+
+
+
+
+
 const displayinfo = (info) => {
     const cards = document.querySelector('div.cards'); // SPOTLIGHT INFORMATION
     const goldmembership = info.filter(membership => membership.membership == "Gold")
 
     info.forEach(membership => {
-        // Create elements to add to the div.cards element
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
         let portrait = document.createElement('img');
@@ -27,19 +35,15 @@ const displayinfo = (info) => {
         web.setAttribute('href', membership.web);
         // let web = document.createElement('href', membership.web);
 
-
         h2.textContent = membership.name;
-
         portrait.setAttribute('src', membership.portrait);
         portrait.setAttribute('alt', `Portait of ${membership.name}`);
         portrait.setAttribute('loading', 'lazy');
-
         address.textContent = membership.address;
         phone.textContent = membership.phone
         label.textContent = membership.label
         web.textContent = 'website'
 
-        // Append the section(card) with the created elements
         card.appendChild(h2);
         card.appendChild(portrait);
         card.appendChild(address);
@@ -51,25 +55,48 @@ const displayinfo = (info) => {
 } // end of function expression
 
 
+const gridbutton = document.querySelector("#disgrid");
+const listbutton = document.querySelector("#dislist");
+const display = document.querySelector("article");
 
-var elements = document.getElementsByClassName("cards");
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
-// Declare a loop variable
-var i;
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("disgrid");
+    display.classList.remove("dislist");
+});
 
-// List View
-function listView() {
-    for (i = 0; i < elements.length; i++) {
-        elements[i].style.width = "100%";
-    }
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+    display.classList.add("dislist");
+    display.classList.remove("disgrid");
 }
 
-// Grid View
-function gridView() {
-    for (i = 0; i < elements.length; i++) {
-        elements[i].style.width = "50%";
-    }
-}
+
+
+
+
+
+// var elements = document.getElementsByClassName("cards");
+
+// // Declare a loop variable
+// var i;
+
+// // List View
+// function listView() {
+//     for (i = 0; i < elements.length; i++) {
+//         elements[i].style.width = "100%";
+//     }
+// }
+
+// // Grid View
+// function gridView() {
+//     for (i = 0; i < elements.length; i++) {
+//         elements[i].style.width = "50%";
+//     }
+// }
 
 
 

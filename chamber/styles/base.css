@@ -425,26 +425,63 @@ textarea {
 }
 
 
-/* =============================DIRECTORY=================== */
+/* =======VW======================DIRECTORY=================== */
 
 .cards section {
     border: solid 10px rgb(21, 255, 0);
     margin: 0;
-    width: 70%;
+    /* display: flex;
+    flex-wrap: wrap; */
+    text-align: center;
+    justify-content: center;
 }
 
-.cards {
-    border: solid 10px red;
-
+.disbuttons {
+    text-align: center;
+    justify-content: center;
 }
 
+.disgrid {
+    border: solid 10px orange;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+}
 
+/* .disgrid section>* {
+    margin: 0.1rem;
+} */
 
+.disgrid section {
+    flex-direction: column;
+    text-align: center;
+}
 
+.dislist {
+    border: solid 10px yellow;
+    display: flex;
+    flex-direction: column;
+}
 
+.dislist section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
 
+.dislist section>* {
+    margin: 0 1rem;
+}
 
+.dislist section img {
+    display: none;
+    /* smaller viewports only */
+}
 
+.dislist section:nth-child(even) {
+    background-color: #bed;
+}
 
 
 
