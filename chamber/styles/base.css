@@ -441,7 +441,7 @@ textarea {
     justify-content: center;
 }
 
-.disgrid {
+.cards {
     border: solid 10px orange;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -452,7 +452,7 @@ textarea {
     margin: 0.1rem;
 } */
 
-.disgrid section {
+.cards section {
     flex-direction: column;
     text-align: center;
 }
