@@ -1,4 +1,60 @@
+* {
+    font-size: 30px;
+}
+
+.filled {
+    background-color: black;
+    color: white;
+}
+
+table {
+    margin: 10px auto;
+    border: 2px solid black;
+    box-shadow: 0 0 7px var(--shadow);
+    border-collapse: collapse;
+}
+
 caption {
+    background-color: black;
+    padding: 10px;
+    border: 2px solid black;
+    caption-side: top;
+    color: rgb(206, 26, 116);
+    font-size: 0.85rem;
+}
+
+/* tr:first-child th,
+.highlightd { */
+/* background-color: var(--back); */
+/* color: var(--forelight); }*/
+
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid rgb(27, 25, 25);
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.555);
+    font-size: larger;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+
+
+
+
+
+/* caption {
     background-color: black;
     color: white;
     font-size: 20px;
@@ -10,8 +66,8 @@ caption {
     position: absolute;
     top: 85px;
     left: 287px;
-    /* width: 32%; */
     height: auto;
+    font-size: 30px;
 }
 
 .styled-table {
@@ -31,7 +87,6 @@ caption {
     align-self: right;
 }
 
-/* .styled-table th, */
 .styled-table td {
     padding: 12px 15px;
     border: 1px solid gray;
@@ -43,4 +98,4 @@ caption {
 
 span {
     color: purple;
-}
+} */
