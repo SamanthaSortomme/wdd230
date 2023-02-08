@@ -79,6 +79,11 @@ h3 {
     color: black;
 }
 
+h6 {
+    color: #8a1ca5;
+    font-size: 40px;
+}
+
 .banner {
     display: none;
     top: 0;
@@ -428,7 +433,7 @@ textarea {
 /* =======VW======================DIRECTORY=================== */
 
 .cards section {
-    border: solid 10px rgb(21, 255, 0);
+    border: solid 10px #d32189;
     margin: 0;
     /* display: flex;
     flex-wrap: wrap; */
@@ -441,66 +446,50 @@ textarea {
     justify-content: center;
 }
 
-.cards {
+/* .cards {
     border: solid 10px orange;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+} */
+
+.dgrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: center;
 }
 
-/* .disgrid section>* {
-    margin: 0.1rem;
-} */
-
-.cards section {
+.dgrid section {
     flex-direction: column;
     text-align: center;
 }
 
-.dislist {
-    border: solid 10px yellow;
+
+
+.dlist {
     display: flex;
     flex-direction: column;
 }
 
-.dislist section {
+.dlist section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
     padding: 0.25rem;
 }
 
-.dislist section>* {
+.dlist section>* {
     margin: 0 1rem;
 }
 
-.dislist section img {
+.dlist section img {
     display: none;
-    /* smaller viewports only */
+
 }
 
-.dislist section:nth-child(even) {
-    background-color: #bed;
+.dlist section:nth-child(even) {
+    background-color: rgb(89, 199, 226);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* 

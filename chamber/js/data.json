@@ -31,6 +31,36 @@
             "membership": "Bronze"
         },
         {
+            "name": "Sugar Rush",
+            "address": "444 NeedSpeed Hl, CandyLand, NA 99501",
+            "phone": "(888) 787-9123",
+            "web": "https://newsroom.churchofjesuschrist.org/",
+            "portrait": "images/drace.jpg",
+            "label": "Race Track",
+            "nice": true,
+            "membership": "Gold"
+        },
+        {
+            "name": "O-Dog N-Twix",
+            "address": "8989 Bone Jct, CandyLand, NA 99501",
+            "phone": "(888) 787-3669",
+            "web": "https://newsroom.churchofjesuschrist.org/events",
+            "portrait": "images/dpaws.jpg",
+            "label": "Dog Training",
+            "nice": true,
+            "membership": "Gold"
+        },
+        {
+            "name": "Ginger Hut",
+            "address": "005 Pole ln, CandyLand, NA 99501",
+            "phone": "(888) 787-4236",
+            "web": "https://www.churchofjesuschrist.org/media/broadcasts?lang=eng",
+            "portrait": "images/dgin.jpg",
+            "label": "Lodging",
+            "nice": true,
+            "membership": "Gold"
+        },
+        {
             "name": "Hot Hot Hot",
             "address": "005 Pole ln, CandyLand, NA 99501",
             "phone": "(888) 787-4236",
