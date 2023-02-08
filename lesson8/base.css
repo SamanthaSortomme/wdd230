@@ -8,9 +8,9 @@ caption {
 
 .plan {
     position: absolute;
-    top: 60px;
-    left: 170px;
-    width: 32%;
+    top: 85px;
+    left: 287px;
+    /* width: 32%; */
     height: auto;
 }
 
@@ -31,7 +31,7 @@ caption {
     align-self: right;
 }
 
-.styled-table th,
+/* .styled-table th, */
 .styled-table td {
     padding: 12px 15px;
     border: 1px solid gray;
