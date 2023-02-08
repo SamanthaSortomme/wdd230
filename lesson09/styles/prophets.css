@@ -1,28 +1,37 @@
 body {
-    background-color: #93f353;
-    display: grid;
-    justify-items: center;
+    background-color: #2d20e4;
+    text-align: center;
+    color: #239ac2;
+    ;
+
 }
 
 .cards {
     /* display: grid;
     grid-template-columns: 1fr; */
-    text-align: center;
+    /* text-align: center; */
     gap: 1.5em;
-}
-
-.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
 }
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+} */
 
 section {
     background-color: #239ac2;
-    color: #66e710;
+    color: #2d20e4;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* overflow: hidden; */
+}
+
+.cards img {
+    padding: 2em;
 }
 
 p {
