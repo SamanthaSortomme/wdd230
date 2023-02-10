@@ -31,6 +31,7 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
     getWindchill(currentTemp.innerHTML, weatherData.wind.speed);
+
 }
 
 function getWindchill(temperature, speed) {
@@ -41,6 +42,6 @@ function getWindchill(temperature, speed) {
         windchill.innerHTML = wchill.toFixed(0);
     }
     else {
-
+        windchill.innerHTML = "Negligible";
     }
 }
