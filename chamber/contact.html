@@ -48,21 +48,57 @@
     </header>
     <div id="date"></div>
     <main>
+
+
+
         <div class="contactp">
-            <h1>
-                Call or text: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">+8675309</a>
-                <br><br>
-                <a href="thankyou.html">Email: CandyLand@NotARealEmail.com</a><br><br>
-                For complaints please write or call the WDD department at BYUI:<br><br>
-                525 S Center St, Rexburg, ID 83460<br><br>
-                or call them at (208)496-1411, make sure to tell them class 230 sent you
-                <br> <br>
-                <a href="index.html">
-                    &hearts;Don't want to contact us yet? Click here to go to the home page and learn more about how
+            <h5>Contact us</h5>
+            <section>
+                <p>Call or text: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">8675309</a>
+                </p>
+
+                <p> Email:<a href="thankyou.html"> CandyLand@NotARealEmail.com</a></p>
+                <p> 123 ABC Street Candy Land, USA 77777
+                </p><br>
+
+
+                <p> &hearts;Don't want to contact us yet? Click
+                    <a href="index.html">
+                        HERE </a>to go to the home page and learn more about how
                     cool we
-                    are&hearts; </a>
-            </h1>
+                    are&hearts;
+                </p>
+            </section>
+
+
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>All Fields Required</legend>
+                    <label class="top">Name<input type="text" name="name" required></label>
+                    <label class="top">Phone Number<input type="tel" name="number" required></label>
+                    <label class="top"> Email<input type="email" name="mail" required></label><br><br>
+                    Do you Currently Live In Candy Land?
+                    <label class="sbs"><input type="radio" name="Membership" required> Yes</label>
+                    <label class="sbs"><input type="radio" name="Membership">I Wish</label><br><br>
+                    Are you a Chamber Member?
+                    <label class="sbs "><input type="radio" name="Member" required> Yes</label>
+                    <label class="sbs "><input type="radio" name="Member">Not yet</label>
+                    <div>What is your inquiry?</div>
+                    <textarea class="top" type="text"></textarea>
+                    <hr>
+
+                    <button type="submit" class="submitBtn">Contact the Chamber</button>
+                </fieldset>
+            </form>
+            <section>
+                <p> For complaints please write or call the WDD department at BYUI:</p>
+                <p>525 S Center St, Rexburg, ID 83460</p>
+                <p>or call them at (208)496-1411, make sure to tell them class 230 sent you</p>
+            </section>
+
+
         </div>
+
     </main>
     <footer>
         <section class="about">
@@ -95,8 +131,8 @@
             <a class="contact" href="contact.html">&hearts;Contact Us&hearts;</a>
             <br>
             Last Modified on <span id="lastModified">&nbsp;</span>
-
         </section>
+
     </footer>
     <!-- <script src="js/scripts.js"></script>
     <script src="js/banner.js"></script>-->

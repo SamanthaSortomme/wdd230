@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main: #f39a47;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+header {
+    padding: 3em;
+    text-align: center;
+    background-color: var(--main);
+
+}
+
+nav a {
+    text-align: center;
+    font-size: 45px;
+    padding: 10px;
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+    color: var(--main);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h6 {
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 3em;
+}

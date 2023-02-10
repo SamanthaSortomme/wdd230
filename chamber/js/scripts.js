@@ -73,7 +73,7 @@ function checkCookie() {
         const currentDate = new Date()
         const previousDate = new Date(user.visitedOn)
         const deltaDay = datediff(previousDate, currentDate)
-        alert("Welcome again " + user.username + '. ' + deltaDay + ' Days have elapsed since your last visit.');
+        // alert("Welcome again " + user.username + '. ' + deltaDay + ' Days have elapsed since your last visit.');
         setCookie("username", user.username, 365); //update cookie for correct last arrived time
     }
     else {

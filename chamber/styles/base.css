@@ -79,6 +79,13 @@ h3 {
     color: black;
 }
 
+h5 {
+    text-align: center;
+    margin: 1px;
+    color: #8a1ca5;
+    font-size: 30px;
+}
+
 h6 {
     color: #8a1ca5;
     font-size: 40px;
@@ -267,6 +274,7 @@ header nav .social {
     border-radius: 3em;
 }
 
+/* =================spotlights=========================== */
 .spotlights {
     box-shadow: 0 0 30px #d813c8;
     display: flex;
@@ -337,16 +345,7 @@ p {
     grid-template-columns: 1fr;
 }
 
-/* =============contact page====================== */
 
-.contactp {
-    background-color: white;
-    color: #d32189;
-}
-
-.contactp a {
-    color: rgb(37, 191, 230);
-}
 
 /* ===============JOIN PAGE===================== */
 
@@ -370,7 +369,7 @@ form div {
     display: block;
     padding-top: 1rem;
     color: #d32189;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 form label.top input,
@@ -429,6 +428,28 @@ textarea {
     border: 20px solid #d32189;
 }
 
+/* =============contact page====================== */
+
+.contactp {
+    color: #d32189;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    font-size: 1.5rem;
+}
+
+.contactp a {
+    color: rgb(35, 22, 219);
+}
+
+/* .contactp form fieldset {
+    /* display: inline-block; */
+/* text-align: center; */
+/* justify-content: center; */
+/* display: block; */
+/* text-align: center; */
+/* justify-items: center; */
+/* justify-self: center; */
+/* justify-content: stretch; */
 
 /* =======VW======================DIRECTORY=================== */
 

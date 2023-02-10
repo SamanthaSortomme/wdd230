@@ -88,7 +88,7 @@
             "portrait": "images/dgym.jpg",
             "label": "Gym",
             "nice": true,
-            "membership": "Silver "
+            "membership": "Silver"
         },
         {
             "name": "FillerUp Grocery",
@@ -98,7 +98,7 @@
             "portrait": "images/dgrocery.jpg",
             "label": "Grocery",
             "nice": null,
-            "membership": "Silver "
+            "membership": "Silver"
         },
         {
             "name": "Cake~N~Bake",
@@ -118,7 +118,7 @@
             "portrait": "images/dzoo.jpg",
             "label": "Zoo",
             "nice": false,
-            "membership": "Silver "
+            "membership": "Silver"
         }
     ]
 }
