@@ -5,7 +5,7 @@ const caption = document.querySelector('figcaption');
 // Get the weather data from the API
 const apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=dee0f018f2545d071172175fb6f52c2c';
 
-// api.openweathermap.org / data / 2.5 / weather ? q = London, uk& APPID=dee0f018f2545d071172175fb6f52c2c
+
 async function apiFetch() {
     try {
         const response = await fetch(apiURL);
@@ -21,7 +21,6 @@ async function apiFetch() {
     }
 }
 apiFetch()
-// captialize
 
 
 function displayResults(weatherData) {
@@ -32,7 +31,7 @@ function displayResults(weatherData) {
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
+    caption.textContent = desc;
 }
 
 // function capitalize(string) {
