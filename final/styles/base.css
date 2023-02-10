@@ -1,25 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lora:wght@600&family=Oranienbaum&display=swap');
+
+
+/* 
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Lora', serif;
+font-family: 'Oranienbaum', serif;
+ */
+
+
 * {
     box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Oranienbaum', serif;
 }
 
 :root {
     --main: #f39a47;
 }
 
-html {
-    -webkit-text-size-adjust: 100%;
-}
-
 header {
     padding: 3em;
     text-align: center;
     background-color: var(--main);
-
 }
 
 nav a {
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     padding: 10px;
     color: white;
 }
@@ -33,14 +40,57 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+
+}
+
+.container div {
+    background-color: rgba(238, 150, 18, 0.438);
+    font-size: 2vw;
+    text-align: center;
+    border: 2px solid;
 }
 
 a {
     text-decoration: none;
 }
 
+/* =========================H1-H6============================== */
+h2 {
+    font-family: 'Lora', serif;
+}
+
 h6 {
     grid-column: 1/4;
     text-align: center;
     font-size: 3em;
+
+}
+
+/* ==========================================BUTTON=========================== */
+
+button {
+    color: white;
+    background-color: var(--main);
+    font-size: 20px;
+    /* padding: 1em; */
+    border: double 4px black;
+    margin: 3%;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--main);
+    cursor: pointer;
+}
+
+/* ======================WEATHER============================= */
+
+.weather {
+    font-size: 15px;
+    display: grid;
+}
+
+.weather section {
+    background-color: pink;
+    border: 1px solid green;
 }
