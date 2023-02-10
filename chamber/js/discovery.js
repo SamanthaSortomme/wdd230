@@ -1,4 +1,5 @@
 
+
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 const imgOptions = {
     rootMargin: '0px 0px 50px 0px',
@@ -29,12 +30,3 @@ if ('IntersectionObserver' in window) {
         loadImages(img)
     });
 }
-
-function hiddentime() {
-    let date = new Date();
-
-    const time = date.toLocaleString()
-    console.log(time)
-    document.querySelector('#hiddentime').value = time;
-}
-hiddentime()
