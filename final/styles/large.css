@@ -1,0 +1,35 @@
+@media only screen and (min-width: 70em) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    h5 {
+        grid-column: 1/5;
+    }
+
+    h6 {
+        grid-column: 1/4;
+    }
+
+    footer {
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2px;
+    }
+
+    .no {
+        display: block;
+    }
+
+    .yes {
+        display: none;
+    }
+
+    .medno {
+        display: block;
+    }
+}

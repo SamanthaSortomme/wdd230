@@ -453,9 +453,17 @@ textarea {
 
 /* =======VW======================DIRECTORY=================== */
 
+
+/* .b {
+    display: flex;
+    width: 100%;
+} */
+
 .cards section {
-    border: solid 10px #d32189;
+    outline: solid 5px #d32189;
+    border: solid 5px #d32189;
     margin: 0;
+    padding: 0;
     /* display: flex;
     flex-wrap: wrap; */
     text-align: center;

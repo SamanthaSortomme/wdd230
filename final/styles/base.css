@@ -38,16 +38,15 @@ nav a:hover {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-
+    grid-template-columns: 1fr;
 }
 
 .container div {
-    background-color: rgba(238, 150, 18, 0.438);
+    /* border: 2px solid;
+    background-color: rgba(238, 150, 18, 0.438); */
     font-size: 2vw;
     text-align: center;
-    border: 2px solid;
+
 }
 
 a {
@@ -57,12 +56,23 @@ a {
 /* =========================H1-H6============================== */
 h2 {
     font-family: 'Lora', serif;
+    color: var(--main);
+}
+
+h4 {
+    color: var(--main);
+}
+
+h5 {
+    text-align: center;
+    font-size: 3em;
+    color: var(--main);
 }
 
 h6 {
-    grid-column: 1/4;
     text-align: center;
     font-size: 3em;
+    color: rgb(228, 67, 19);
 
 }
 
@@ -83,14 +93,29 @@ button:hover {
     cursor: pointer;
 }
 
-/* ======================WEATHER============================= */
-
-.weather {
-    font-size: 15px;
-    display: grid;
+li {
+    text-align: left;
+    list-style-type: none;
+    padding: .2em;
 }
 
-.weather section {
+/* ======================WEATHER============================= */
+
+
+
+footer section {
     background-color: pink;
     border: 1px solid green;
+}
+
+footer .social {
+    text-align: right;
+}
+
+.flink {
+    align-self: top;
+}
+
+.yes {
+    display: none;
 }
