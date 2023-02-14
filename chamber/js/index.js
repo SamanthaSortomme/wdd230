@@ -115,14 +115,7 @@ const displaySpotlights = (info) => {
 // ====================POSTED 2 CODES I TOOK FROM TO GET THIS===============
 
 
-
-
-
-
-
 const last = document.querySelector('#last');
-
-
 
 
 function setCookie(cname, cvalue, exdays) {
@@ -166,9 +159,6 @@ function checkCookie() {
         const previousDate = new Date(user.visitedOn)
         const deltaDay = datediff(previousDate, currentDate)
 
-
-
-
         // alert
         
         last.innerHTML = ("Welcome again " + user.username + '. ' + deltaDay + ' Days have elapsed since your last visit.');
@@ -184,6 +174,17 @@ function checkCookie() {
 }
 
 checkCookie();
+
+const closeLast = document.getElementById('closeLast')
+closeLast.addEventListener('click', function (e) {
+    console.log('button was clicked')
+})
+
+
+document.getElementById('closeLast').onclick = function () {
+    this.parentNode.remove();
+}
+
 
 // =====================Took from 2 codes to get what I have============
 
