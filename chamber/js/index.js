@@ -114,6 +114,17 @@ const displaySpotlights = (info) => {
 
 // ====================POSTED 2 CODES I TOOK FROM TO GET THIS===============
 
+
+
+
+
+
+
+const last = document.querySelector('#last');
+
+
+
+
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     cvalue = JSON.stringify({ username: cvalue, visited: true, visitedOn: d.getTime() });
@@ -136,6 +147,7 @@ function getCookie(cname) {
         }
     }
     return "";
+ 
 }
 
 /**
@@ -153,8 +165,15 @@ function checkCookie() {
         const currentDate = new Date()
         const previousDate = new Date(user.visitedOn)
         const deltaDay = datediff(previousDate, currentDate)
-        // alert("Welcome again " + user.username + '. ' + deltaDay + ' Days have elapsed since your last visit.');
+
+
+
+
+        // alert
+        
+        last.innerHTML = ("Welcome again " + user.username + '. ' + deltaDay + ' Days have elapsed since your last visit.');
         setCookie("username", user.username, 365); //update cookie for correct last arrived time
+        console.log(last.innerHTML)
     }
     else {
         const username = prompt("Please enter your name:", "");
