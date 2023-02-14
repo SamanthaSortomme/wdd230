@@ -131,24 +131,26 @@ h6 {
 .last {
     /* border: double black 10px; */
 
-    border: dotted 10px rgb(37, 191, 230);
+    border: dotted 10px white;
     color: rgb(27, 26, 26);
     z-index: 12;
-    height: 30vh;
-    width: 40vw;
+    height: 45vh;
+    width: 62vw;
     background-image: linear-gradient(rgb(248, 77, 148), rgb(37, 191, 230), rgb(248, 77, 148));
     display: flex;
     margin: 0 auto;
     align-items: center;
+    align-content: center;
     font-size: 3vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-style: oblique;
     position: absolute;
-    top: 28vw;
-    left: 30%;
+    top: 30vw;
+    left: 17%;
     border-radius: 30%;
 }
+
 
 #closeLast {
     background-color: transparent;
@@ -160,7 +162,7 @@ h6 {
 }
 
 #closeLast img {
-    height: 2.3em;
+    height: 3em;
     z-index: 2;
 }
 
