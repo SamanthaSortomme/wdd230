@@ -69,7 +69,7 @@ h5 {
     color: var(--main);
 }
 
-h6 {
+h1 {
     text-align: center;
     font-size: 3em;
     color: rgb(228, 67, 19);
@@ -124,7 +124,6 @@ footer .social {
 /* =======================ABOUT================================= */
 /* =======================ABOUT================================= */
 
-.about {
+.freshp {
     display: flex;
-
 }
