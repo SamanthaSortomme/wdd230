@@ -7,7 +7,6 @@ const bannerMessage = (day) => {
     console.log(message)
     console.log(bannerH1)
     bannerH1.appendChild(message);
-
 }
 
 

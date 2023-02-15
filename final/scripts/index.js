@@ -68,3 +68,29 @@ function displayResults(weatherData) {
     overCaptionDesc.textContent = overDesc;
 
 }
+
+
+// ==========================LAST UPDATED============================
+
+function updateDate() {
+    let date = new Date();
+    let dd = String(date.getDate()).padStart(2, '0');
+    let mm = String(date.getMonth() + 1).padStart(2, '0');
+    let yyyy = date.getFullYear();
+
+    const formatted_date = mm + '~' + dd + '~' + yyyy;
+    console.log(formatted_date);
+
+    document.querySelector('#lastModified').innerHTML = formatted_date;
+    const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+        dateStyle: "full"
+    }).format(date);
+    let statement = ` Today is ${fulldateUK}`;
+    document.querySelector('#lastModified').innerHTML = statement;
+}
+updateDate();
+
+if (document.lastModified) {
+    document.getElementById('lastModified').innerHTML =
+        new Date(document.lastModified).toLocaleString();
+}

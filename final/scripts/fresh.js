@@ -1,3 +1,6 @@
+const submit = document.getElementById('submitBtn')
+
+
 let dropdown1 = document.getElementById('dropdown1');
 let dropdown2 = document.getElementById('dropdown2');
 let dropdown3 = document.getElementById('dropdown3');
@@ -44,21 +47,50 @@ async function awwFetch() {
 awwFetch();
 
 function optionPopulate(data) {
-    let option;
+    let option1;
+    let option2;
+    let option3;
 
     for (let i = 0; i < data.length; i++) {
         option1 = document.createElement('option');
         option2 = document.createElement('option');
         option3 = document.createElement('option');
         option1.text = data[i].name;
-        option1.value = data[i].id;
+        option1.value = JSON.stringify(data[i].nutritions);
         option2.text = data[i].name;
-        option2.value = data[i].nutrition;
+        option2.value = JSON.stringify(data[i].nutritions);
         option3.text = data[i].name;
-        option3.value = data[i].nutrition;
+        option3.value = JSON.stringify(data[i].nutritions);
         dropdown1.add(option1);
         dropdown2.add(option2);
         dropdown3.add(option3);
     }
 }
 
+submit.addEventListener('click', () => {
+    console.log('calculating nutrition');
+    const fruit1 = JSON.parse(dropdown1.value);
+    const fruit2 = JSON.parse(dropdown2.value);
+    const fruit3 = JSON.parse(dropdown3.value);
+    let totalCarbs = fruit1.carbohydrates + fruit2.carbohydrates + fruit3.carbohydrates;
+    let totalProtein = fruit1.protein + fruit2.protein + fruit3.protein;
+    let totalFat = fruit1.fat + fruit2.fat + fruit3.fat;
+    let totalCalories = fruit1.calories + fruit2.calories + fruit3.calories;
+    let totalSugar = fruit1.sugar + fruit2.sugar + fruit3.sugar;
+    console.log(totalCarbs + '\n' + totalProtein + '\n' + totalFat + '\n' + totalCalories + '\n' + totalSugar)
+    // const totallyNotABallon = 
+});
+
+
+// function newTrishInn() {
+//     const fruit1 = dropdown1.value;
+//     // const fruit2 = dropdown2.value
+//     // const fruit3 = dropdown3.value
+//     console.log(fruit1);
+// }
+
+// function getOption() {
+//     selectElement = document.querySelector('#select1');
+//     output = selectElement.options[selectElement.selectedIndex].value;
+//     document.querySelector('.output').textContent = output;
+// }

@@ -20,14 +20,14 @@
     </nav>
 
 
-    <form method="get" action="thankyou.html">
+    <form>
         <fieldset>
             <legend>Your Order</legend>
-            <select class="dropdown" name="First Fruit">
+            <select id="dropdown1" name="First Fruit">
             </select>
-            <select class="dropdown" name="Second Fruit">
+            <select id="dropdown2" name="Second Fruit">
             </select>
-            <select class="dropdown" name="Third Fruit">
+            <select id="dropdown3" name="Third Fruit">
             </select>
             <label class="drink">First Name* <input type="text" name="fname" required></label>
             <label class="drink">Phone*<input type="tel" name="phone" placeholder="1112221234" required></label>
@@ -38,9 +38,14 @@
             <div>Special Instructions</div>
             <textarea class="drink" type="text"></textarea>
         </fieldset>
-        <button type="submit" class="submitBtn">Order My Drink!</button>
+        <button type="submit" id="submitBtn">Order My Drink!</button>
     </form>
     <script src="scripts/fresh.js"></script>
+    <div class="results">
+        <p>Nutritional facts for this drink:</p>
+        <ul class="nutrition">
+        </ul>
+    </div>
 </body>
 
 </html>
