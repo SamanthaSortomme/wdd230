@@ -19,6 +19,7 @@
             <button type="button" id="closeBanner">
                 <img src="images/canex.png" alt="Close" loading="lazy">
             </button>
+            <!-- Come and eat your favorite sweets this Tuesday at Cupcake Commons, 3pm -->
         </div>
     </div>
     <header>
@@ -26,14 +27,14 @@
             <ul class="responsive menu">
                 <li><a href="#" onclick="toggleMenu()"><img src="images/hamburgerr.png" class="menu-icon"
                             alt="&#9776;"></a></li>
-                <li><a href="index.html">Home </a></li>
+                <li><a href="index.html" class="active">Home </a></li> <!-- make active on all pages-->
                 <li><a href="discover.html">Discover </a></li>
                 <li><a href="contact.html">Contact </a></li>
                 <li><a href="directory.html">Directory </a></li>
-                <li><a href="join.html" class="active">Join </a></li>
+                <li><a href="join.html">Join </a></li>
             </ul>
             <div class="headAlign">
-                <img src="images/lollypop.webp" class="logo" alt="logo" loading="lazy">
+                <div class="logo"><img src="images/lollypop.webp" class="logo" alt="logo" loading="lazy"></div>
                 <h1>Candy Land Chamber of Commerce Official Website</h1>
                 <div class="social">
                     <a href="https://facebook.com" target="_blank">
@@ -156,6 +157,40 @@
     <footer>
         <section class="about">
             <div class="address">
+                <!-- <h6>Come Play With Us</h6> -->
+                <h6> 123 ABC Street</h6>
+                <h6> Candy Land, USA 77777</h6>
+            </div> <br>
+            <div class="contact">
+                <!-- <h6>Shuffle The Cards</h6> -->
+                <h6> CandyLand@Hasbro.com</h6>
+                <h6> 867-5309</h6>
+            </div>
+        </section>
+        <section class="end">
+            <img src="images/lollypop.webp" class="logo" alt="logo"> <br>
+            <a class="contact" href="contact.html">&hearts;Contact Us&hearts;</a>
+            <br>
+            <h4>
+                Last Modified on <span id="lastModified">&nbsp;</span> </h4><br>
+            <!-- Days Since Last Visited: <span id="lastvisited">&nbsp;</span> -->
+        </section>
+        <section class="location">
+            <h6>Come Visit us</h6>
+            <!-- <h6>Click Here For Directions</h6> -->
+            <a href="https://goo.gl/maps/dPArMgupPZAfH2cMA">
+                Map</a>
+            <h6>
+                CandyLife&copy;<span id="copyright">
+                </span> </h6> <br>
+            <h6>Samantha Sortomme WDD 230 Project</h6>
+        </section>
+    </footer>
+
+
+    <!-- <footer> OLD FOOTER FOR REFERENCE 
+        <section class="about">
+            <div class="address">
                 <h4>Come Play With Us</h4>
                 <p> 123 ABC Street</p>
                 <p> Candy Land, USA 77777</p>
@@ -186,7 +221,7 @@
             Last Modified on <span id="lastModified">&nbsp;</span>
 
         </section>
-    </footer>
+    </footer> -->
     <!-- <script src="js/scripts.js"></script>
     <script src="js/banner.js"></script>-->
     <!-- <script src="js/weather.js"></script>
