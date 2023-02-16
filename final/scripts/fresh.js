@@ -1,3 +1,7 @@
+const fname = document.getElementById('fname')
+const phone = document.getElementById('phone')
+const email = document.getElementById('email')
+const instruct = document.getElementById('instruction')
 const submit = document.getElementById('submitBtn')
 
 
@@ -65,19 +69,24 @@ function optionPopulate(data) {
         dropdown2.add(option2);
         dropdown3.add(option3);
     }
-}
+};
 
 submit.addEventListener('click', () => {
     console.log('calculating nutrition');
-    const fruit1 = JSON.parse(dropdown1.value);
-    const fruit2 = JSON.parse(dropdown2.value);
-    const fruit3 = JSON.parse(dropdown3.value);
-    let totalCarbs = fruit1.carbohydrates + fruit2.carbohydrates + fruit3.carbohydrates;
-    let totalProtein = fruit1.protein + fruit2.protein + fruit3.protein;
-    let totalFat = fruit1.fat + fruit2.fat + fruit3.fat;
-    let totalCalories = fruit1.calories + fruit2.calories + fruit3.calories;
-    let totalSugar = fruit1.sugar + fruit2.sugar + fruit3.sugar;
-    console.log(totalCarbs + '\n' + totalProtein + '\n' + totalFat + '\n' + totalCalories + '\n' + totalSugar)
+
+    console.log(fname.value)
+    console.log(phone.value)
+    console.log(email.value)
+    console.log(instruct.value)
+    // const fruit1 = JSON.parse(dropdown1.value);
+    // const fruit2 = JSON.parse(dropdown2.value);
+    // const fruit3 = JSON.parse(dropdown3.value);
+    // let totalCarbs = fruit1.carbohydrates + fruit2.carbohydrates + fruit3.carbohydrates;
+    // let totalProtein = fruit1.protein + fruit2.protein + fruit3.protein;
+    // let totalFat = fruit1.fat + fruit2.fat + fruit3.fat;
+    // let totalCalories = fruit1.calories + fruit2.calories + fruit3.calories;
+    // let totalSugar = fruit1.sugar + fruit2.sugar + fruit3.sugar;
+    // console.log(totalCarbs + '\n' + totalProtein + '\n' + totalFat + '\n' + totalCalories + '\n' + totalSugar)
     // const totallyNotABallon = 
 });
 

@@ -5,22 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Final</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
 </head>
 
 <body>
+    <header>
+        <div>
+            <picture class="logo">
+                <source srcset="images/kk500.jpg" media="(min-width: 37em) and (max-width: 70em)">
+                <source srcset="images/kkkk.jpg" media="(min-width: 70em)">
+                <img src="images/kk200.jpg" class="logo" alt="logo" loading="lazy">
+            </picture>
+            <nav>
+                <a href="index.html" class="home">
+                    Home Page</a>
+                <a href="fresh.html" class="home">
+                    Order Online</a>
+                <a href="about.html" class="home">
+                    About Us </a>
+            </nav>
+        </div>
+
+    </header>
     <div class="freshp container">
-        <h1> Fresh</h1>
-        <nav>
-            <a href="index.html" class="home">
-                Home Page</a>
-            <a href="fresh.html" class="home">
-                Order Online</a>
-            <a href="about.html" class="home">
-                About Us </a>
-        </nav>
-
-
         <form>
             <fieldset>
                 <legend>Your Order</legend>
@@ -30,21 +41,22 @@
                 </select>
                 <select id="dropdown3" name="Third Fruit">
                 </select>
-                <label class="drink">First Name* <input type="text" name="fname" required></label>
-                <label class="drink">Phone*<input type="tel" name="phone" placeholder="1112221234" required></label>
-                <label class="drink"> Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                <label class="drink">First Name* <input type="text" name="fname" id="fname" required></label>
+                <label class="drink">Phone*<input type="tel" name="phone" id="phone" placeholder="1112221234"
+                        required></label>
+                <label class="drink"> Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
                         required></label>
 
 
                 <div>Special Instructions</div>
-                <textarea class="drink" type="text"></textarea>
+                <textarea class="drink" type="text" id="instruction"></textarea>
             </fieldset>
             <button type="submit" id="submitBtn">Order My Drink!</button>
         </form>
         <script src="scripts/fresh.js"></script>
         <div class="results">
             <p>Nutritional facts for this drink:</p>
-            <ul class="nutrition">
+            <ul id="nutrition">
             </ul>
         </div>
     </div>
