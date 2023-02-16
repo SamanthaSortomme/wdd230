@@ -5,6 +5,8 @@ const instruct = document.getElementById('instruction')
 const submit = document.getElementById('submitBtn')
 
 
+//can clone dom abject look into it
+
 let dropdown1 = document.getElementById('dropdown1');
 let dropdown2 = document.getElementById('dropdown2');
 let dropdown3 = document.getElementById('dropdown3');

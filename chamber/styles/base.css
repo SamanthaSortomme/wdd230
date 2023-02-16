@@ -131,7 +131,7 @@ h6 {
 .last {
     /* border: double black 10px; */
 
-    border: dotted 10px white;
+    /* border: dotted 10px white;
     color: rgb(27, 26, 26);
     z-index: 12;
     height: 45vh;
@@ -146,10 +146,26 @@ h6 {
     font-weight: 800;
     font-style: oblique;
     position: absolute;
+    border-radius: 30%; */
 
-    border-radius: 30%;
+
+    top: 0;
+    position: sticky;
+    background-image: linear-gradient(rgb(37, 191, 230), rgb(248, 77, 148), rgb(37, 191, 230));
+    /* background-color: linear-gradient(to left, (37, 191, 230), rgb(37, 191, 230)); */
+    color: black;
+    border: double;
+    z-index: 11;
 }
 
+
+
+
+#last {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
 
 #closeLast {
     background-color: transparent;
@@ -237,6 +253,7 @@ nav a:hover {
     margin-right: .1em;
     margin-left: .1em;
     text-align: left;
+    /* max-height: 50%; */
     /* z-index: 1;
     max-width: 100%;
     max-height: auto; */

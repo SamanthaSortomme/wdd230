@@ -60,7 +60,8 @@
                             required></label>
                     <label class="top">Business Name/Title* <input type="text" name="lname" required></label>
                     <label class="top"> Business Position Title <input type="text" name="title" minlength="7"
-                            pattern="^[A-Za-z -]+$"></label>
+                            oninvalid="this.setCustomValidity('Must be 7 Characters and alpha, spaces, hyphens')"
+                            oninput="setCustomValidity('')" pattern="^[A-Za-z -]+$"></label>
                     <label class="top">Why Do You Want To Join <input type="text" name="why"></label>
                     <label class="top">How Did You Hear About Us? <input type="text" name="hear"></label>
 
