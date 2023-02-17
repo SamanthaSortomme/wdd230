@@ -156,7 +156,7 @@ h6 {
 
 
     top: 0;
-    position: sticky;
+    /* position: sticky; */
     background-image: linear-gradient(rgb(37, 191, 230), rgb(248, 77, 148), rgb(37, 191, 230));
     /* background-color: linear-gradient(to left, (37, 191, 230), rgb(37, 191, 230)); */
     color: black;
@@ -355,9 +355,25 @@ header nav .social {
     max-width: 80%;
 }
 
-.spot3 {
+div .spotlights section:nth-child(1) {
     display: none;
 }
+
+/* div .spotlights:last-of-type {
+    display: none;
+} */
+
+/* div .spotlights li:nth-child(1) {
+    display: none;
+} */
+
+/* .spotlights li:last-child {
+    display: none;
+} */
+
+/* .spot3 {
+    display: none;
+} */
 
 
 

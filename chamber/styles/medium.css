@@ -70,11 +70,9 @@
         grid-column: 1/3;
         grid-row: 3/4;
         flex-direction: row;
+        justify-content: space-around;
     }
 
-    .spot3 {
-        display: none;
-    }
 
     /* =====================discovery================ */
     .discovery {

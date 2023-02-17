@@ -45,7 +45,7 @@
         flex-direction: column;
     }
 
-    .spot3 {
+    div .spotlights section:nth-child(1) {
         display: block;
     }
 

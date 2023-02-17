@@ -54,7 +54,7 @@ const random = (lights) => {
     return lights[Math.floor((Math.random() * lights.length))];
 }
 
-random([2, 3, 0])
+// random([2, 3, 0])
 console.log(random)
 console.log([2, 3, 0][1])
 
@@ -71,6 +71,13 @@ const displaySpotlights = (info) => {
         return membership.membership == "Gold" || membership.membership == "Silver"
     })
     sLight = shuffle(sLight).slice(0, 3)
+
+
+    // const matchingQuery = mediaQueries.find(query => 
+    //     window.matchMedia(query).matches
+
+
+
 
     // shuffle(sLight) .sort()
     console.log(sLight)
