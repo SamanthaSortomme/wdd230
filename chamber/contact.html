@@ -70,7 +70,8 @@
                 <fieldset>
                     <legend>All Fields Required</legend>
                     <label class="top">Name<input type="text" name="name" required></label>
-                    <label class="top">Phone Number<input type="tel" name="number" required></label>
+                    <label class="top">Phone Number<input type="tel" name="number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                            required></label>
                     <label class="top"> Email<input type="email" name="mail" required></label><br><br>
                     Do you Currently Live In Candy Land?
                     <label class="sbs"><input type="radio" name="Membership" required> Yes</label>

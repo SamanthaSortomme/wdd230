@@ -41,17 +41,17 @@
                 </select>
                 <select id="dropdown3" name="Third Fruit">
                 </select>
+                <!-- <div class="info"> -->
                 <label class="drink">First Name* <input type="text" name="fname" id="fname" required></label>
-                <label class="drink">Phone*<input type="tel" name="phone" id="phone" placeholder="1112221234"
-                        required></label>
+                <label class="drink">Phone*<input type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" id="phone"
+                        placeholder="888-222-1234" required></label>
                 <label class="drink"> Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
                         required></label>
-
-
-                <div>Special Instructions</div>
+                <p class="drink">Special Instructions</p>
                 <textarea class="drink" type="text" id="instruction"></textarea>
+                <!-- </div> -->
             </fieldset>
-            <button id="submitBtn">Order My Drink!</button>
+            <button id="push" type="submit">Order My Drink!</button>
         </form>
         <script src="scripts/fresh.js"></script>
         <div class="results">

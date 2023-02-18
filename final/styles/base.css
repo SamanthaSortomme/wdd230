@@ -37,9 +37,6 @@ nav a:hover {
     color: var(--main);
 }
 
-#lastModified {
-    border: solid 10px;
-}
 
 .container {
     display: grid;
@@ -63,6 +60,15 @@ h2 {
     font-family: 'Lora', serif;
     color: var(--main);
 }
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--main);
+}
+
+
+
 
 h4 {
     color: var(--main);
@@ -106,11 +112,14 @@ li {
 
 /* ======================WEATHER============================= */
 
+/* #lastModified {
+    border: solid 10px;
+} */
 
 
 footer section {
-    background-color: pink;
-    border: 1px solid green;
+    background-color: var(--main);
+    border: 1px solid black;
 }
 
 footer .social {
@@ -126,9 +135,72 @@ footer .social {
 }
 
 /* =======================ABOUT================================= */
-/* =======================ABOUT================================= */
+
+
+.cont {
+
+    text-align: left;
+}
+
+ul li {
+    text-align: left;
+    font-size: 1em;
+    color: var(--main);
+}
+
+/*  =======================ABOUT================================= */
 /* =======================ABOUT================================= */
 
-.freshp {
-    display: flex;
+.freshp fieldset {
+    color: var(--main);
+    font-size: 1.5rem;
 }
+
+form label.drink {
+    display: block;
+    padding-top: 1rem;
+}
+
+form label.drink input,
+form label.drink select {
+
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--main);
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+}
+
+textarea {
+    width: 100%;
+    height: 11vh;
+}
+
+/* .freshp {
+    display: block;
+} */
+
+/* 
+
+.drink select {
+    display: block;
+    padding-top: 1rem;
+
+}
+
+.drink input:required {
+    border-left: var(--main) solid 6px;
+}
+
+div .info {
+    display: block;
+    align-items: left;
+
+} */
+
+/* .freshp legend {
+    color: red;
+} */

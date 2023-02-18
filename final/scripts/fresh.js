@@ -2,7 +2,7 @@ const fname = document.getElementById('fname')
 const phone = document.getElementById('phone')
 const email = document.getElementById('email')
 const instruct = document.getElementById('instruction')
-const submit = document.getElementById('submitBtn')
+const button = document.getElementById('push')
 
 
 //can clone dom abject look into it
@@ -72,8 +72,9 @@ function optionPopulate(data) {
         dropdown3.add(option3);
     }
 };
-
-submit.addEventListener('click', () => {
+//submit changed to button
+//submitbtn changed to push
+button.addEventListener('click', () => {
     console.log('calculating nutrition');
 
     console.log(fname.value)
