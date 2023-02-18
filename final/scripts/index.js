@@ -94,3 +94,19 @@ if (document.lastModified) {
     document.getElementById('lastModified').innerHTML =
         new Date(document.lastModified).toLocaleString();
 }
+
+//=======================LOCAL STORAGE========================
+drinks = document.getElementById('totalDrinks');
+const orderedDrinks = Number(window.localStorage.getItem('total-drinks'));
+
+if (orderedDrinks !== 0) {
+    if (orderedDrinks === 1) {
+        drinks.innerHTML = `You have ordered ${orderedDrinks} specialty drink since your first visit (or last cache clearing)! WOOHOO!`;
+    }
+    else {
+        drinks.innerHTML = `You have ordered a total of ${orderedDrinks} specialty drinks since your first visit (or last cache clearing).`;
+    }
+}
+else {
+    drinks.innerHTML = 'Did you know that you can order specialty fruit drinks online? Head over to the "order online" page to see our selections!';
+}

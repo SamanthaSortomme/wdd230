@@ -1,9 +1,11 @@
-const fname = document.getElementById('fname')
-const phone = document.getElementById('phone')
-const email = document.getElementById('email')
-const instruct = document.getElementById('instruction')
-const button = document.getElementById('push')
+const fruitFile = 'scripts/fruits.json';
 
+const fname = document.getElementById('fname');
+const phone = document.getElementById('phone');
+const email = document.getElementById('email');
+const instruct = document.getElementById('instruction');
+const button = document.getElementById('push');
+const list = document.getElementById('nutrition');
 
 //can clone dom abject look into it
 
@@ -22,18 +24,15 @@ const defaultOption3 = document.createElement('option');
 defaultOption1.text = 'Choose Fruit';
 defaultOption2.text = 'Choose Fruit';
 defaultOption3.text = 'Choose Fruit';
-
+defaultOption1.value = 0;
+defaultOption2.value = 0;
+defaultOption3.value = 0;
 // dropdown.add(defaultOption);
 // dropdown.selectedIndex = 0;
 
 dropdown1.add(defaultOption1);
 dropdown2.add(defaultOption2);
 dropdown3.add(defaultOption3);
-dropdown1.selectedIndex = 0;
-dropdown2.selectedIndex = 0;
-dropdown3.selectedIndex = 0;
-
-const fruitFile = 'scripts/fruits.json';
 
 async function awwFetch() {
     try {
@@ -74,25 +73,89 @@ function optionPopulate(data) {
 };
 //submit changed to button
 //submitbtn changed to push
-button.addEventListener('click', () => {
-    console.log('calculating nutrition');
-
-    console.log(fname.value)
-    console.log(phone.value)
-    console.log(email.value)
-    console.log(instruct.value)
-    // const fruit1 = JSON.parse(dropdown1.value);
-    // const fruit2 = JSON.parse(dropdown2.value);
-    // const fruit3 = JSON.parse(dropdown3.value);
-    // let totalCarbs = fruit1.carbohydrates + fruit2.carbohydrates + fruit3.carbohydrates;
-    // let totalProtein = fruit1.protein + fruit2.protein + fruit3.protein;
-    // let totalFat = fruit1.fat + fruit2.fat + fruit3.fat;
-    // let totalCalories = fruit1.calories + fruit2.calories + fruit3.calories;
-    // let totalSugar = fruit1.sugar + fruit2.sugar + fruit3.sugar;
-    // console.log(totalCarbs + '\n' + totalProtein + '\n' + totalFat + '\n' + totalCalories + '\n' + totalSugar)
-    // const totallyNotABallon = 
+button.addEventListener('click', function () {
+    let totals = getTotal();
+    populateResult(totals);
+    storeTotalDrinks();
 });
 
+function getTotal() {
+    const fruit1 = JSON.parse(dropdown1.value);
+    const fruit2 = JSON.parse(dropdown2.value);
+    const fruit3 = JSON.parse(dropdown3.value);
+    total = {};
+
+    if (fruit2 == 0 && fruit3 == 0) {
+        total.carbs = fruit1.carbohydrates;
+        total.protein = fruit1.protein;
+        total.fat = fruit1.fat;
+        total.calories = fruit1.calories;
+        total.sugar = fruit1.sugar;
+    }
+    else if (fruit2 == 0) {
+        total.carbs = fruit1.carbohydrates + fruit3.carbohydrates;
+        total.protein = fruit1.protein + fruit3.protein;
+        total.fat = fruit1.fat + fruit3.fat;
+        total.calories = fruit1.calories + fruit3.calories;
+        total.sugar = fruit1.sugar + fruit3.sugar;
+    }
+    else if (fruit3 == 0) {
+        total.carbs = fruit1.carbohydrates + fruit2.carbohydrates;
+        total.protein = fruit1.protein + fruit2.protein;
+        total.fat = fruit1.fat + fruit2.fat;
+        total.calories = fruit1.calories + fruit2.calories;
+        total.sugar = fruit1.sugar + fruit2.sugar;
+    }
+    else {
+        total.carbs = fruit1.carbohydrates + fruit2.carbohydrates + fruit3.carbohydrates;
+        total.protein = fruit1.protein + fruit2.protein + fruit3.protein;
+        total.fat = fruit1.fat + fruit2.fat + fruit3.fat;
+        total.calories = fruit1.calories + fruit2.calories + fruit3.calories;
+        total.sugar = fruit1.sugar + fruit2.sugar + fruit3.sugar;
+    }
+    return total;
+}
+
+function populateResult(nutritionTotals) {
+    makeListItem('First Name', fname.value);
+    makeListItem('Email', email.value);
+    makeListItem('Phone Number', phone.value);
+    makeListItem('First Fruit', dropdown1.name);
+    if (dropdown2.value != 0) {
+        makeListItem('Second Fruit', dropdown2.name);
+    }
+    else {
+        makeListItem('Second Fruit', 'None');
+    }
+    if (dropdown3.value != 0) {
+        makeListItem('Third Fruit', dropdown3.name);
+    }
+    else {
+        makeListItem('Third Fruit', 'None');
+    }
+    makeListItem('Nutritional Facts', '')
+    makeListItem('carbohydrates', nutritionTotals.carbs.toFixed(2))
+    makeListItem('protein', nutritionTotals.protein.toFixed(2))
+    makeListItem('fat', nutritionTotals.fat.toFixed(2))
+    makeListItem('calories', nutritionTotals.calories.toFixed(2))
+    makeListItem('Sugar', nutritionTotals.sugar.toFixed(2))
+    makeListItem('Special instructions', instruct.value)
+}
+
+
+function makeListItem(key, value) {
+    const element = document.createElement('li');
+    const text = document.createElement('span');
+    text.textContent = key + ': ' + value;
+    element.appendChild(text);
+    list.appendChild(element);
+}
+
+function storeTotalDrinks() {
+    let numDrinks = window.localStorage.getItem('total-drinks');
+    numDrinks++;
+    localStorage.setItem('total-drinks', numDrinks);
+}
 
 // function newTrishInn() {
 //     const fruit1 = dropdown1.value;
@@ -106,3 +169,7 @@ button.addEventListener('click', () => {
 //     output = selectElement.options[selectElement.selectedIndex].value;
 //     document.querySelector('.output').textContent = output;
 // }
+
+
+
+
