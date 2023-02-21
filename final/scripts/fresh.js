@@ -74,9 +74,12 @@ function optionPopulate(data) {
 //submit changed to button
 //submitbtn changed to push
 button.addEventListener('click', function () {
-    let totals = getTotal();
-    populateResult(totals);
-    storeTotalDrinks();
+    if (dropdown1.value !== "0" && fname.value !== '' && email.value !== '' && phone.value !== '') {
+        let totals = getTotal();
+        populateResult(totals);
+        storeTotalDrinks();
+        document.getElementById('order').reset();
+    }
 });
 
 function getTotal() {
@@ -117,18 +120,20 @@ function getTotal() {
 }
 
 function populateResult(nutritionTotals) {
+    let date = getDate();
     makeListItem('First Name', fname.value);
     makeListItem('Email', email.value);
     makeListItem('Phone Number', phone.value);
-    makeListItem('First Fruit', dropdown1.name);
+    makeListItem('order date', date)
+    makeListItem('First Fruit', dropdown1.selectedOptions[0].text);
     if (dropdown2.value != 0) {
-        makeListItem('Second Fruit', dropdown2.name);
+        makeListItem('Second Fruit', dropdown2.selectedOptions[0].text);
     }
     else {
         makeListItem('Second Fruit', 'None');
     }
     if (dropdown3.value != 0) {
-        makeListItem('Third Fruit', dropdown3.name);
+        makeListItem('Third Fruit', dropdown3.selectedOptions[0].text);
     }
     else {
         makeListItem('Third Fruit', 'None');
@@ -142,6 +147,16 @@ function populateResult(nutritionTotals) {
     makeListItem('Special instructions', instruct.value)
 }
 
+function getDate() {
+    let date = new Date();
+    let dd = String(date.getDate()).padStart(2, '0');
+    let mm = String(date.getMonth() + 1).padStart(2, '0');
+    let yyyy = date.getFullYear();
+
+    const formatted_date = mm + '~' + dd + '~' + yyyy;
+    console.log(formatted_date);
+    return formatted_date;
+}
 
 function makeListItem(key, value) {
     const element = document.createElement('li');
@@ -156,6 +171,8 @@ function storeTotalDrinks() {
     numDrinks++;
     localStorage.setItem('total-drinks', numDrinks);
 }
+
+
 
 // function newTrishInn() {
 //     const fruit1 = dropdown1.value;

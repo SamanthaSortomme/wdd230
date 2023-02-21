@@ -29,35 +29,86 @@
                     About Us </a>
             </nav>
         </div>
-        NEED the order date!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! on card with fats carbs and such
+
     </header>
     <div class="freshp container">
-        <fieldset>
-            <legend>Your Order</legend>
-            <select id="dropdown1" name="First Fruit">
-            </select>
-            <select id="dropdown2" name="Second Fruit">
-            </select>
-            <select id="dropdown3" name="Third Fruit">
-            </select>
-            <!-- <div class="info"> -->
-            <label class="drink">First Name* <input type="text" name="fname" id="fname" required></label>
-            <label class="drink">Phone*<input type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" id="phone"
-                    placeholder="888-222-1234" required></label>
-            <label class="drink"> Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
-                    required></label>
-            <p class="drink">Special Instructions</p>
-            <textarea class="drink" type="text" id="instruction"></textarea>
-            <!-- </div> -->
-        </fieldset>
-        <button id="push" type="submit">Order My Drink!</button>
-
+        <form id="order" onsubmit="return false">
+            <fieldset>
+                <legend>Your Order</legend>
+                <select id="dropdown1" name="First Fruit">
+                </select>
+                <select id="dropdown2" name="Second Fruit">
+                </select>
+                <select id="dropdown3" name="Third Fruit">
+                </select>
+                <!-- <div class="info"> -->
+                <label class="drink">First Name* <input type="text" name="fname" id="fname" required></label>
+                <label class="drink">Phone*<input type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" id="phone"
+                        placeholder="888-222-1234" required></label>
+                <label class="drink"> Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
+                        required></label>
+                <p class="drink">Special Instructions</p>
+                <textarea class="drink" type="text" id="instruction"></textarea>
+                <!-- </div> -->
+            </fieldset>
+            <button id="push" type="submit">Order My Drink!</button>
+        </form>
         <div class="results">
             <p>Nutritional facts for this drink:</p>
             <ul id="nutrition">
             </ul>
         </div>
     </div>
+    <footer>
+        <h5>Weather</h5>
+        <section>
+            <p>The current temperature is <span id="temperature"></span> &deg; F.</p>
+            <p>The current humidity is <span id="humidity"></span>%</p>
+            <p>The current conditions are: <span id="currently"></span></p>
+            <figure>
+                <img src=" " alt="Weather" id="weathericon">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+        <section>
+            <p>Tomorrow's temperature should be <span id="tomTemperature"></span> &deg; F.</p>
+            <p>Tomorrow's humidity should be <span id="tomHumidity"></span>%</p>
+            <p>Tomorrow's conditions should be: <span id="tomorrow"></span></p>
+            <figure>
+                <img src=" " alt="Weather" id="tomWeathericon">
+                <figcaption id="tomFigcaption"></figcaption>
+            </figure>
+        </section>
+        <section>
+            <p>Overmorrow's temperature should be <span id="overTemperature"></span> &deg; F.</p>
+            <p>Overmorrow's humidity should be <span id="overHumidity"></span>%</p>
+            <p>Overmorrow's conditions should be: <span id="overmorrow"></span></p>
+            <figure>
+                <img src=" " alt="Weather" id="overWeathericon">
+                <figcaption id="overFigcaption"></figcaption>
+            </figure>
+        </section>
+        <section>
+
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+            <div class="flink">
+                <a href="resource.html">&diamond;
+                    ReSoUrCeS UsEd&diamond;; </a>
+                <p> Last Modified on <span id="lastModified">&nbsp;</span> </p>
+
+            </div>
+        </section>
+    </footer>
     <script src="scripts/fresh.js"></script>
 </body>
 
