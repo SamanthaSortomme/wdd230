@@ -75,6 +75,7 @@ function optionPopulate(data) {
 //submitbtn changed to push
 order.addEventListener('submit', function () {
     if (dropdown1.value !== "0" && fname.value !== '' && email.value !== '' && phone.value !== '') {
+        document.getElementById('nutrition').innerHTML = '';
         let totals = getTotal();
         populateResult(totals);
         storeTotalDrinks();
